@@ -4542,7 +4542,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  {buttonId: `-ytad ${ytvc.mp3}`, buttonText: {displayText: '♫ Audio'}, type: 1}
  ]
  let buttonMessage = {
- //image: { url: anu.thumbnail },
+ image: { url: anu.thumbnail },
  caption: `「  _Miku Youtube Player_  」
 
  Title : ${anu.title}
@@ -4561,8 +4561,8 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  body: `${global.BotName}`,
  thumbnail: BotLogo,
  mediaType:2,
- mediaUrl: anu.url,
- sourceUrl: anu.url
+ mediaUrl: anu.url
+ //sourceUrl: anu.url
  }}
  }
  Miku.sendMessage(m.chat, buttonMessage, { quoted: m })
