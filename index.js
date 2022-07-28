@@ -237,7 +237,7 @@ let Mikubuttons = [
 
 
    
-    /** Send Button 5 Image
+    /** Send Button 5 Images
      *
      * @param {*} jid
      * @param {*} text
