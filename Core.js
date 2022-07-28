@@ -5895,7 +5895,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
                 { quickReplyButton: { displayText: `Bot Owner`, id: '-owner'} }
                 ]
                 let buttonMessage = {
-                    image: { url: mikupic },
+                    image: BotLogo ,
                     caption: helpmenu,
                     footer: `${global.BotName}`,
                     buttons: butRun,
@@ -5920,7 +5920,7 @@ case '':{
                 { quickReplyButton: { displayText: `Help`, id: '-help'} }
                 ]
                 let buttonMessage = {
-                    image: { url: mikupic },
+                    image: BotLogo ,
                     caption: needhelpmenu,
                     footer: `${global.BotName}`,
                     buttons: butRun,
