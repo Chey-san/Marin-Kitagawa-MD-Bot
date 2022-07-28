@@ -5922,7 +5922,7 @@ break
 
 
 
-case '':{
+case ' ':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
@@ -5953,7 +5953,7 @@ break
 
 default:
 if (budy.startsWith('=>')) {
-if (!isCreator) return reply(mess.owner)
+if (!isCreator) return reply(mess.botowner)
 function Return(sul) {
 sat = JSON.stringify(sul, null, 2)
 bang = util.format(sat)
@@ -5965,26 +5965,26 @@ return reply(bang)
 try {
 reply(util.format(eval(`(async () => { ${budy.slice(3)} })()`)))
 } catch (e) {
-Miku.sendMessage(from, {image:err4r, caption:String(e)}, {quoted:m})
+Miku.sendMessage(from, {image:ErrorPic, caption:String(e)}, {quoted:m})
 }
 }
 if (budy.startsWith('>')) {
-if (!isCreator) return reply(mess.owner)
+if (!isCreator) return reply(mess.botowner)
 try {
 let evaled = await eval(budy.slice(2))
 if (typeof evaled !== 'string') evaled = require('util').inspect(evaled)
 await reply(evaled)
 } catch (err) {
-await Miku.sendMessage(from, {image:err4r, caption:String(err)}, {quoted:m})
+await Miku.sendMessage(from, {image:ErrorPic, caption:String(err)}, {quoted:m})
 }
 }
 
 
                 
 if (budy.startsWith('$')) {
-if (!isCreator) return replay(mess.owner)
+if (!isCreator) return replay(mess.botowner)
 exec(budy.slice(2), (err, stdout) => {
-if(err) return Miku.sendMessage(from, {image:err4r, caption:String(err)}, {quoted:m})
+if(err) return Miku.sendMessage(from, {image:ErrorPic, caption:String(err)}, {quoted:m})
 if (stdout) return replay(stdout)
 })
 }
