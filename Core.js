@@ -5907,7 +5907,8 @@ break
 
 
 
-case '':{
+case '':
+    if(iscmd){
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
