@@ -270,11 +270,11 @@ const isImage = (m.type === 'imageMessage')
 _sewa.expiredCheck(Miku, sewa)
 
 const reply = (teks) => {
-            Miku.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `Subscribe YouTube Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Assets/pic2.jpg`),"sourceUrl": `${linkz1}`}}}, { quoted: m})
+            Miku.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.BotName}`,"body": `Subscribe YouTube Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Assets/pic2.jpg`),"sourceUrl": `${linkz1}`}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            Miku.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `Subscribe YouTube Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Assets/pic2.jpg`),"sourceUrl": `${linkz2}`}}}, { quoted: m})
+            Miku.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.BotName}`,"body": `Subscribe YouTube Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Assets/pic2.jpg`),"sourceUrl": `${linkz2}`}}}, { quoted: m})
         }
         
 
@@ -2768,7 +2768,7 @@ maker.textpro("https://textpro.me/create-a-sketch-text-effect-online-1044.html",
     case 'chocolate': case 'strawberry': case 'matrix': case 'blood': case 'dropwater': case 'toxic': 
     case 'lava': case 'rock': case 'bloodglas': case 'halloween': case 'darkgold': case 'joker': case 'wicker':
      case 'firework': case 'skeleton': case 'blackpink': case 'sand': case 'glue': case '1917': case 'leaves': case 'demon': {
-                 if (!q) return reply(`Example : ${prefix + command} ${global.ownername}`) 
+                 if (!q) return reply(`Example : ${prefix + command} ${global.OwnerName}`) 
                     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
                  reply(mess.waiting)
