@@ -4546,24 +4546,15 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  caption: `「  _Miku Youtube Player_  」
 
  Title : ${anu.title}
- ID : ${anu.videoId}
  Duration : ${anu.timestamp}
  Viewers : ${anu.views}
  Uploaded : ${anu.ago}
- Author : ${anu.author.name}
- Channel : ${anu.author.url}
+ Channel : ${anu.author.name}
  Url : ${anu.url}`,
  footer: `${global.BotName}`,
  buttons: buttons,
  headerType: 4,
- contextInfo:{externalAdReply:{
- title: anu.title,
- body: `${global.BotName}`,
- thumbnail: BotLogo,
- mediaType:2,
- mediaUrl: anu.url
- //sourceUrl: anu.url
- }}
+
  }
  Miku.sendMessage(m.chat, buttonMessage, { quoted: m })
  }
@@ -4590,14 +4581,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  footer: `${BotName}`,
  buttons: buttons,
  headerType: 4,
- contextInfo:{externalAdReply:{
- title: res.title,
- body: `${global.OwnerName}`,
- thumbnail: {url:res.thumb},
- mediaType:2,
- mediaUrl: args[0],
- sourceUrl: args[0]
- }}
+
  }
  Miku.sendMessage(from, buttonMessage, {quoted:m})
  }).catch(_ => _)
