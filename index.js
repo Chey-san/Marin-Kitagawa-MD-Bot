@@ -83,13 +83,12 @@ Miku.ev.on('groups.update', async pea => {
      }
     })
 
-/*
+
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
-let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
-let docs = pickRandom(documents)
-*/
+
+
 
 Miku.ev.on('group-participants.update', async (anu) => {
         console.log(anu)
