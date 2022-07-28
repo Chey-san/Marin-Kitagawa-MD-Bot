@@ -5922,7 +5922,7 @@ break
 
 
 
-case ' ':{
+case '':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
