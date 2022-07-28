@@ -931,18 +931,6 @@ if (antiVirtex) {
         } else {
         }
         
-        if (AntiLinkAll2)
-           if (budy.includes("http://")){
-        if (!isBotAdmins) return
-        bvl = `\`\`\`「 _Antilink System_ 」\`\`\`\n\nLink sent by Admin so no action will be taken!`
-        if (isAdmins) return reply(bvl)
-        if (m.key.fromMe) return reply(bvl)
-        if (isCreator) return reply(bvl)
-        kice = m.sender
-        await Miku.groupParticipantsUpdate(m.chat, [kice], 'remove')
-        Miku.sendMessage(from, {text:`\`\`\`「 _Antilink System_ 」\`\`\`\n\n@${kice.split("@")[0]} Baka has been removed for sending links in this group!`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
-        } else {
-        }
 
 if (m.mtype == 'viewOnceMessage') {
 	if (!db.data.chats[m.chat].antionce) return
