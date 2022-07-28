@@ -3491,7 +3491,7 @@ case 'happymod': {
  if (!args.join(" ")) return replay(`Example : -yts Heat waves`)
  let yts = require("yt-search")
  let search = await yts(args.join(" "))
- let teks = '```「 _YouTube search Engine_ 」```\n\n Search Term: '+text+'\n\n'
+ let teks = '```「 YouTube search Engine 」```\n\n Search Term: '+text+'\n\n'
  let no = 1
  for (let i of search.all) {
  teks += `Result No : ${no++}\nTitle : ${i.title}\nViews : ${i.views}\nDuration : ${i.timestamp}\nUploaded : ${i.ago}\nAuthor : ${i.author.name}\nUrl : ${i.url}\n\n-------------------\n\n`
@@ -4542,8 +4542,9 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  {buttonId: `-ytad ${ytvc.mp3}`, buttonText: {displayText: '♫ Audio'}, type: 1}
  ]
  let buttonMessage = {
- image: { url: anu.thumbnail },
- caption: `「 _Miku Youtube Player_ 」*
+ //image: { url: anu.thumbnail },
+ caption: `「  _Miku Youtube Player_  」
+
  Title : ${anu.title}
  ID : ${anu.videoId}
  Duration : ${anu.timestamp}
@@ -4574,7 +4575,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  if (!args[0]) return reply(mess.nolink)
  try {
  hx.youtube(args[0]).then(async(res) => {
- textyt = `「 _Miku Youtube Downloader_ 」
+ textyt = `「  _Miku Youtube Downloader_  」
  Title : ${res.title}
  Size : ${res.size}
  $Quality : ${res.quality}
