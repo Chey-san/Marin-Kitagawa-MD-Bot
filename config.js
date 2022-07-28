@@ -26,10 +26,10 @@ global.websitex = "https://github.com/FantoX001"
 global.lolhuman = "KaysaS"
 
 
-global.Thumb = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
-global.BotLogo  = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur logo pic
-global.ErrorPic = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur error pic
-global.Thumb1 = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
+global.BotLogo = fs.readFileSync("./Assets/pic1.jpg")
+global.Thumb = fs.readFileSync("./Assets/pic9.jpg")
+global.Thumb1 = fs.readFileSync("./Assets/pic5.jpg")
+global.ErrorPic = fs.readFileSync("./Assets/pic7.jpg")
 
 
 global.ntilinkytvid = []
