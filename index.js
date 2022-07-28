@@ -115,9 +115,12 @@ Miku.ev.on('group-participants.update', async (anu) => {
                 let WAuserName = num
                 Mikutext = `
 Hello @${WAuserName.split("@")[0]},
+
 I am *Miku Nakano*, Welcome to ${metadata.subject}.
-You are ${gcmembers}th member here.
+
+*Group Description:*
 ${metadata.desc}
+
 Press the button below to start using *MIKU*...`
 
 let Mikubuttons = [
@@ -137,7 +140,9 @@ Miku.sendMessage(anu.id, buttonMessage)
                 	let WAuserName = num
                     Mikutext = `┌─
 Sayonara 👋, @${WAuserName.split("@")[0]},
+
 I hope you will come back soon, but we are not going to miss you though!
+
 Just let him go and start using MIKU by pressing the button below...
 `
 
