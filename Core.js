@@ -5852,7 +5852,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
 
  ——————〈 Anti Link 〉——————
  
- antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antivirus, antiwame
+ antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
 
  ——————〈 Search 〉——————
 
