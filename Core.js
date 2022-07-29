@@ -270,11 +270,11 @@ const isImage = (m.type === 'imageMessage')
 _sewa.expiredCheck(Miku, sewa)
 
 const reply = (teks) => {
-            Miku.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.BotName}`,"body": `Subscribe YouTube Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Assets/pic2.jpg`),"sourceUrl": `${linkz1}`}}}, { quoted: m})
+            Miku.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.BotName}`,"body": `Thanks for using Miku`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Assets/pic2.jpg`),"sourceUrl": `${SupportGroupLink}`}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            Miku.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.BotName}`,"body": `Subscribe YouTube Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Assets/pic2.jpg`),"sourceUrl": `${linkz2}`}}}, { quoted: m})
+            Miku.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.BotName}`,"body": `Thanks for using Miku`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Assets/pic2.jpg`),"sourceUrl": `${SupportGroupLink}`}}}, { quoted: m})
         }
         
 
