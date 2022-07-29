@@ -5265,10 +5265,7 @@ break
 case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
-
-      mikupic ='https://wallpapercave.com/wp/wp10524580.jpg'
-    
-        
+      
  const helpmenu = `Konichiwa *${pushname}* dear,
 
  I am *Miku Nakano*, a bot developed by Fantox.
@@ -5355,15 +5352,15 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
 
  Type *${prefix}help* to get full command list.`
      
-         let butRun = [
+         let butHelpm = [
                 { quickReplyButton: { displayText: `Bot Owner`, id: '-owner'} }
                 ]
                 let buttonMessage = {
-                    image: BotLogo ,
+                    image: { url: 'https://wallpapercave.com/wp/wp10524580.jpg' },
                     caption: helpmenu,
-                    footer: `${global.BotName}`,
-                    buttons: butRun,
-                    headerType: 2
+                    footer: `${BotName}`,
+                    buttons: butHelpm,
+                    headerType: 4
                 }
             Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
                 }
@@ -5377,6 +5374,23 @@ case 'nsfwmenu':
     if (!AntiNsfw) return reply(mess.nonsfw)
         reply(` ——————〈 NSFW Menu 〉——————\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
     break
+
+    case 'coffee': case 'kopi': {
+        if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+                let buttons = [
+                        {buttonId: `-coffee`, buttonText: {displayText: '>>'}, type: 1}
+                    ]
+                    let buttonMessage = {
+                        image: { url: 'https://coffee.alexflipnote.dev/random' },
+                        caption: `Here is your Coffee...`,
+                        footer: `${BotName}`,
+                        buttons: buttons,
+                        headerType: 4
+                    }
+                    Miku.sendMessage(m.chat, buttonMessage, { quoted: m })
+                }
+                break
 */
 
 
