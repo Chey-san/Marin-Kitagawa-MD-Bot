@@ -201,6 +201,17 @@ let Mikubuttons = [
     }
     
     
+    XeonBotInc.sendContact = async (jid, kon, quoted = '', opts = {}) => {
+	let list = []
+	for (let i of kon) {
+	    list.push({
+	    	displayName: await XeonBotInc.getName(i + '@s.whatsapp.net'),
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await XeonBotInc.getName(i + '@s.whatsapp.net')}\nFN:${global.ownername}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${global.ytname}\nitem2.X-ABLabel:YouTube\nitem3.URL:${global.socialm}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    })
+	}
+	XeonBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
+    }
+    
     Miku.setStatus = (status) => {
         Miku.query({
             tag: 'iq',
