@@ -138,7 +138,7 @@ Miku.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                 	const buffer = await getBuffer(ppuser)
                 	let WAuserName = num
-                    Mikutext = `┌─
+                    Mikutext = `
 Sayonara 👋, @${WAuserName.split("@")[0]},
 
 I hope you will come back soon, but we are not going to miss you though!
