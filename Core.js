@@ -1562,7 +1562,7 @@ case 'nsfwmenu':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!AntiNsfw) return reply(mess.nonsfw)
-        reply(` ——————〈 NSFW Menu 〉——————\n\n hentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
+        reply(` ——————〈 NSFW Menu 〉——————\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
     break
 
     case 'hoorror':{
@@ -5363,12 +5363,21 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
                     caption: helpmenu,
                     footer: `${global.BotName}`,
                     buttons: butRun,
-                    headerType: 4
+                    headerType: 2
                 }
             Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
                 }
 break
 
+/*
+
+case 'nsfwmenu':
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    if (!AntiNsfw) return reply(mess.nonsfw)
+        reply(` ——————〈 NSFW Menu 〉——————\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
+    break
+*/
 
 
 case '':
