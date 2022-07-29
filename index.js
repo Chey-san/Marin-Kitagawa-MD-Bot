@@ -206,7 +206,7 @@ let Mikubuttons = [
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await Miku.getName(i + '@s.whatsapp.net'),
-
+		vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await Miku.getName(i + '@s.whatsapp.net')}\nFN:${global.OwnerName}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${global.websitex}\nitem2.X-ABLabel:YouTube\nitem3.URL:${global.websitex}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${global.location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	Miku.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
