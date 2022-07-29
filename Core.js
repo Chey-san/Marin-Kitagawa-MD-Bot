@@ -5132,7 +5132,7 @@ reply(mess.waiting)
         image: {url:waifuddd.data.url},
         caption: 'More than one waifu will definitely ruin your Laifu!',
         buttons: wbuttsssr,
-        headerType: 2
+        headerType: 4
          }     
                                   
     await Miku.sendMessage(m.chat, button4Messagess, { quoted:m }).catch(err => {
