@@ -1460,33 +1460,40 @@ case 'me': case 'profile': case 'p':
      
      try {
         
-        pfp=await ShikimoriInc.profilePictureUrl(m.sender, 'image')
+        pfp=await Miku.profilePictureUrl(m.sender, 'image')
     
           } catch (e) {
      
       pfp ='https://wallpapercave.com/wp/wp10524580.jpg'
     }
 
-     const profilexx = `
-*「 Profile Info 」*
-
-*User Name* : *${pushname}*
-*Bio* : ${bioo}
-*Group Admin Status* : *${adn}*
-*Level* : *${levelMenu}*
-*Exp* : *${xpMenu} \ ${reqXp}*
-*Role* : *${role}*
-
-`
+     const profilexx = `*「 Profile Info 」*\n\n*User Name* : ${pushname}\n*Bio* : ${bioo}\n*Group Admin Status* : ${adn}\n*Level* : ${levelMenu}\n*Exp* : ${xpMenu} out of ${reqXp}\n*Role* : ${role}`
  
-     let butRun = [
-            { quickReplyButton: { displayText: `My Soulmate`, id: '-soulmate'} }
-        	]
+/*
+    case 'sc': case 'script': case 'sourcecode': {
+        if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+    teks = `*${global.BotName}'s Script*\n\n*GitHub*: ${global.BotSourceCode}\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
+    let buttons = [
+    {buttonId: `-menu`, buttonText: {displayText: '✨Bot Menu✨'}, type: 1}
+    ]
+    let buttonMessage = {
+    image: Thumb,
+    jpegThumbnail: BotLogo ,
+    caption: teks,
+    footer: `${BotName }`,
+    buttons: buttons,
+    headerType: 4,
+*/
+
+let buttonspro = [
+    {buttonId: `-soulmate`, buttonText: {displayText: 'Your Soulmate'}, type: 1}
+    ]
             let buttonMessage = {
                 image: { url: pfp },
                 caption: profilexx,
-                footer: `${global.BotName}`,
-                buttons: butRun,
+                footer: `${BotName}`,
+                buttons: buttonspro,
                 headerType: 4
             }
         Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
