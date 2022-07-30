@@ -1451,18 +1451,20 @@ case 'me': case 'profile': case 'p':{
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
      
 
-  try {
-        
-    pfp=await ShikimoriInc.profilePictureUrl(m.sender, 'image')
-
-      } catch (e) {
- 
-  pfp ='https://wallpapercave.com/wp/wp10524580.jpg'
-}
      var flob = await getBuffer(picak+'User Profile')
      var bio= await Miku.fetchStatus(m.sender)
      var bioo = bio.status
      const adn= isAdmins? "True":"False"
+     
+     try {
+        
+        pfp=await ShikimoriInc.profilePictureUrl(m.sender, 'image')
+    
+          } catch (e) {
+     
+      pfp ='https://wallpapercave.com/wp/wp10524580.jpg'
+    }
+    
      const profilexx = `
 *「 Profile Info 」*
 
@@ -1563,7 +1565,7 @@ case 'nsfwmenu':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!AntiNsfw) return reply(mess.nonsfw)
-        reply(` ——————〈 NSFW Menu 〉——————\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
+        reply(`    *―――――〈  NSFW Menu  〉―――――*\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
     break
 
     
@@ -4763,63 +4765,63 @@ Here's the list of my Commands.
  
 
 
-*‒‒‒‒‒〈 🌀 Core 🌀 〉‒‒‒‒‒*
+    *―――――〈  Core  〉―――――*
 
 profile, exp, leaderboard, help, delete, listgc, listpc, welcome, speedtest, ping, support, repo, script
  
-*‒‒‒‒‒〈 🌀 Owner 🌀 〉‒‒‒‒‒*
+    *―――――〈  Owner  〉―――――*
 
 self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast
 
-*‒‒‒‒‒〈 🌀 Group 🌀 〉‒‒‒‒‒*
+    *―――――〈  Group  〉―――――*
 
 promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
 
-*‒‒‒‒‒〈 🌀 Anti Link 🌀 〉‒‒‒‒‒*
+    *―――――〈  Anti Link  〉―――――*
  
 antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
 
-*‒‒‒‒‒〈 🌀 Search 🌀 〉‒‒‒‒‒*
+    *―――――〈  Search  〉―――――*
 
 play, song, yts, lyrics, google, playstore, gimage, pinterest, image, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone   
 
-*‒‒‒‒‒〈 🌀 Convert 🌀 〉‒‒‒‒‒*
+    *―――――〈  Convert  〉―――――*
 
 sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
 
-*‒‒‒‒‒〈 🌀 Audio 🌀 〉‒‒‒‒‒*
+    *―――――〈  Audio  〉―――――*
 
 bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
 
-*‒‒‒‒‒〈 🌀 Reactions 🌀 〉‒‒‒‒‒*
+    *―――――〈  Reactions  〉―――――*
 
 bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
 
-*‒‒‒‒‒〈 🌀 Downloader 🌀 〉‒‒‒‒‒*
+    *―――――〈  Downloader  〉―――――*
 
 play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
 
-*‒‒‒‒‒〈 🌀 Weeb 🌀 〉‒‒‒‒‒*
+    *―――――〈  Weeb  〉―――――*
 
 waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
 
-*‒‒‒‒‒〈 🌀 Informative 🌀 〉‒‒‒‒‒*
+    *―――――〈  Informative  〉―――――*
 
 animequote, quote, covid, earthquake, wiki
 
-*‒‒‒‒‒〈 🌀 Others 🌀 〉‒‒‒‒‒*
+    *―――――〈  Others  〉―――――*
 
 image, imginvert, imagestupid, wasted, jail, stickermeme, quotes, darkjoke, 
 
-*‒‒‒‒‒〈 🌀 Fun 🌀 〉‒‒‒‒‒*
+    *―――――〈  Fun  〉―――――*
 
 truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
 
-*‒‒‒‒‒〈 🌀 Essentials 🌀 〉‒‒‒‒‒*
+    *―――――〈  Essentials  〉―――――*
 
 translate, fliptext, toletter
 
-*‒‒‒‒‒〈 🌀 NSFW 🌀 〉‒‒‒‒‒*
+    *―――――〈  NSFW  〉―――――*
 
 Type " *${prefix}nsfw* " then enable NSFW (Admin only!) 
 
