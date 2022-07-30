@@ -5389,7 +5389,7 @@ case '':
                 {buttonId: `-help`, buttonText: {displayText: 'Help'}, type: 1}
                 ]
                 let buttonMessage = {
-                    file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku.mp4'),gifPlayback:true,caption:needhelpmenu},{quoted:m}),
+                    file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku2.mp4'),gifPlayback:true,caption:needhelpmenu},{quoted:m}),
                     caption: needhelpmenu,
                     footer: `${global.BotName}`,
                     buttons: butRun,
