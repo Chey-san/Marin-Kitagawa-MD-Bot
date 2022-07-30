@@ -1466,17 +1466,17 @@ case 'me': case 'profile': case 'p':{
      const profilexx = `
 *「 Profile Info 」*
 
-_User Name:_ : *${pushname}*
-_Bio:_ : ${bioo}
-_Group Admin Status:_ : *${adn}*
-_Level_ : *${levelMenu}*
-_Exp_ : *${xpMenu} \ ${reqXp}*
-_Role_ : *${role}*
+*User Name* : *${pushname}*
+*Bio* : ${bioo}
+*Group Admin Status* : *${adn}*
+*Level* : *${levelMenu}*
+*Exp* : *${xpMenu} \ ${reqXp}*
+*Role* : *${role}*
 
 `
  
      let butRun = [
-            { quickReplyButton: { displayText: `Leaderboards`, id: '-leaderboard'} }
+            { quickReplyButton: { displayText: `My Soulmate`, id: '-soulmate'} }
         	]
             let buttonMessage = {
                 image: { url: pfp },
@@ -1566,484 +1566,7 @@ case 'nsfwmenu':
         reply(` ——————〈 NSFW Menu 〉——————\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
     break
 
-    case 'hoorror':{
-        if (isBan) return reply(mess.banned)	 			
-        if (isBanChat) return reply(mess.bangc)
-             let link = `https://textpro.me/horror-blood-text-effect-online-883.html`
-             let anui = await textpro(link, q)
-             reply(`Chotto Matte...`) 
-             console.log(anui)
-            Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-        }
-        break
     
-    case 'thunder2':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-thunder-text-effect-online-881.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    
-    
-       case 'blackpink':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-blackpink-logo-style-online-1001.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    
-    case 'neon':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/neon-light-text-effect-online-882.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'matrix2':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/matrix-style-text-effect-online-884.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'sky':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-a-cloud-text-effect-on-the-sky-online-1004.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'joker':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-logo-joker-online-934.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'magma':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-a-magma-hot-text-effect-online-1030.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'sand':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/sand-writing-text-effect-online-990.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'pencil':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-a-sketch-text-effect-online-1044.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'graffiti':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-wonderful-graffiti-art-text-effect-1011.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'metallic':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-a-metallic-text-effect-free-online-1041.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'steel':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/steel-text-effect-online-921.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'harrypotter':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-harry-potter-text-effect-online-1025.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'underwater':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/3d-underwater-text-effect-generator-online-1013.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'luxury':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/3d-luxury-gold-text-effect-online-1003.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'glue2':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'fabric':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/fabric-text-effect-online-964.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'neonlight':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/neon-light-glitch-text-generator-online-1063.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'lava':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/lava-text-effect-online-914.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'toxic':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/toxic-text-effect-online-901.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'ancient':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/3d-golden-ancient-text-effect-online-free-1060.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'christmas2':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/sparkles-merry-christmas-text-effect-1054.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'sci_fi':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/create-3d-sci-fi-text-effect-online-1050.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'rainbow':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-         let link = `https://textpro.me/3d-rainbow-color-calligraphy-text-effect-1049.html`
-         let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'classic':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/video-game-classic-8-bit-text-effect-1037.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'watercolor2':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/create-a-free-online-watercolor-text-effect-1017.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'halloween2':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/create-a-spooky-halloween-text-effect-online-1046.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'halloweenfire':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/halloween-fire-text-effect-940.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'writing':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/sand-writing-text-effect-online-990.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'foggy':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/write-text-on-foggy-window-online-free-1015.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'marvel':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/create-logo-style-marvel-studios-ver-metal-972.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'skeleton2':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/create-halloween-skeleton-text-effect-online-1047.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'sketch':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/create-a-sketch-text-effect-online-1044.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'wonderful':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/create-wonderful-graffiti-art-text-effect-1011.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'cool':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/create-a-cool-graffiti-text-on-the-wall-1010.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'collwall':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/create-cool-wall-graffiti-text-effect-online-1009.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'multicolor2':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/online-multicolor-3d-paper-cut-text-effect-1016.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'batman':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/make-a-batman-logo-online-free-1066.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'juice':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    let link = `https://textpro.me/fruit-juice-text-effect-861.html`
-    let anui = await textpro(link, q)
-         reply(`Chotto Matte...`) 
-         console.log(anui)
-        Miku.sendMessage(from, {image:{url:anui}, caption:"Here it is..."}, {quoted:m})
-    }
-       break
-    case 'pornhub':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if(!q) return reply(`Example: ${prefix + command} Fan | tox`)
-    reply(mess.waiting)
-      inilogo4 = args.join(" ")
-    inilogo9 = args.join(" ")
-       var logo4 = inilogo4.split('|')[0]
-    var logo9 = inilogo9.split('|')[1]
-        let anu = await textpro("https://textpro.me/pornhub-style-logo-online-generator-free-977.html", [`${logo4}`,`${logo9}`])
-    console.log(anu)
-    Miku.sendMessage(from,{image:{url:anu}, caption:"Here it is..."},{quoted:m})
-    }
-    break
-    case 'retro':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if(!q) return reply(`Example: ${prefix + command} Fan | tox`)
-    reply(mess.waiting)
-      inilogo4 = args.join(" ")
-    inilogo9 = args.join(" ")
-       var logo4 = inilogo4.split('|')[0]
-    var logo9 = inilogo9.split('|')[1]
-        let anu = await textpro("https://textpro.me/create-3d-retro-text-effect-online-free-1065.html", [`${logo4}`,`${logo9}`])
-    console.log(anu)
-    Miku.sendMessage(from,{image:{url:anu}, caption:"Here it is..."},{quoted:m})
-    }
-    break
-    case 'horror':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if(!q) return reply(`Example: ${prefix + command} Fan | tox`)
-    reply(mess.waiting)
-      inilogo4 = args.join(" ")
-    inilogo9 = args.join(" ")
-       var logo4 = inilogo4.split('|')[0]
-    var logo9 = inilogo9.split('|')[1]
-        let anu = await textpro("https://textpro.me/create-a-cinematic-horror-text-effect-1045.html", [`${logo4}`,`${logo9}`])
-    console.log(anu)
-    Miku.sendMessage(from,{image:{url:anu}, caption:"Here it is..."},{quoted:m})
-    }
-    break
-    case '8bit':{
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if(!q) return reply(`Example: ${prefix + command} Fan | tox`)
-    reply(mess.waiting)
-      inilogo4 = args.join(" ")
-    inilogo9 = args.join(" ")
-       var logo4 = inilogo4.split('|')[0]
-    var logo9 = inilogo9.split('|')[1]
-        let anu = await textpro("https://textpro.me/video-game-classic-8-bit-text-effect-1037.html", [`${logo4}`,`${logo9}`])
-    console.log(anu)
-    Miku.sendMessage(from,{image:{url:anu}, caption:"Here it is..."},{quoted:m})
-    }
-    break
-    
-    case 'textmaker': {
-        if (isBan) return reply(mess.banned)	 			
-        if (isBanChat) return reply(mess.bangc)
-        if (args.length < 1) return reply(`Example :\n${prefix + command} <name>`)
-        if (args[0] === 'glitch') {
-        if (args.length < 2) return reply(`Example :\n${prefix + command + ' ' + args[0]} ${ownername}`)
-        let teds = await thiccysapi.textpro("https://textpro.me/create-impressive-glitch-text-effects-online-1027.html", [args[1]])
-        Miku.sendMessage(from, {image:{url:teds}, caption:"Here it is..."}, {quoted:m})
-        } else if (args[0] === 'glow') {
-        if (args.length < 2) return reply(`Example :\n${prefix + command + ' ' + args[0]} ${ownername}`)
-        let teds = await thiccysapi.textpro("https://textpro.me/create-light-glow-sliced-text-effect-online-1068.html", [args[1]])
-        Miku.sendMessage(from, {image:{url:teds}, caption:"Here it is..."}, {quoted:m})
-        } else {
-        reply(`*Text Maker Menu :*\n> glitch\n> glow`)
-        }
-        }
-        break
     
 
 case 'limituser': case 'userlimit': case 'limit':
@@ -2317,24 +1840,6 @@ return "case"+`'${cases}'`+fs.readFileSync("Core.js").toString().split('case \''
 replay(`${getCase(q)}`)
 break
 
-
-case 'textmaker2': {
-    if (isBan) return reply(mess.banned)	 			
- if (isBanChat) return reply(mess.bangc)
- if (args.length < 1) return reply(`Example :\n${prefix + command} <name>`)
- if (args[0] === 'glitch') {
- if (args.length < 2) return reply(`Example :\n${prefix + command + ' ' + args[0]} ${global.OwnerName}`)
- let teds = await thiccysapi.textpro("https://textpro.me/create-impressive-glitch-text-effects-online-1027.html", [args[1]])
- Miku.sendMessage(from, {image:{url:teds}, caption:"Done!"}, {quoted:m})
- } else if (args[0] === 'glow') {
- if (args.length < 2) return reply(`Example :\n${prefix + command + ' ' + args[0]} ${global.OwnerName}`)
- let teds = await thiccysapi.textpro("https://textpro.me/create-light-glow-sliced-text-effect-online-1068.html", [args[1]])
- Miku.sendMessage(from, {image:{url:teds}, caption:"Done!"}, {quoted:m})
- } else {
- reply(`*Text Maker List :*\n•> glitch\n•> glow`)
- }
- }
- break
 
  case 'emoji': {
     if (isBan) return reply(mess.banned)	 			
@@ -5250,81 +4755,81 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* dear,
 
- I am *Miku Nakano*, a bot developed by Fantox.
+I am *Miku Nakano*, a bot developed by Fantox.
 
- My prefix is:  ${prefix}
+My prefix is:  ${prefix}
 
- Here's the list of my Commands.
+Here's the list of my Commands.
  
 
 
  ——————〈 Core 〉——————
 
- profile, exp, leaderboard, help, delete, listgc, listpc, welcome, speedtest, ping, support, repo, script
+profile, exp, leaderboard, help, delete, listgc, listpc, welcome, speedtest, ping, support, repo, script
  
  ——————〈 Owner 〉——————
 
- self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast
+self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast
 
  ——————〈 Group 〉——————
 
- promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
+promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
 
  ——————〈 Anti Link 〉——————
  
- antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
+antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
 
  ——————〈 Search 〉——————
 
- play, song, yts, lyrics, google, playstore, gimage, pinterest, image, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone   
+play, song, yts, lyrics, google, playstore, gimage, pinterest, image, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone   
 
  ——————〈 Convert 〉——————
 
- sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
+sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
 
  ——————〈 Audio 〉——————
 
- bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
+bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
 
  ——————〈 Reactions 〉——————
 
- bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
+bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
 
  ——————〈 Downloader 〉——————
 
- play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
+play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
 
  ——————〈 Weeb 〉——————
 
- waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
+waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
 
  ——————〈 Informative 〉——————
 
- animequote, quote, covid, earthquake, wiki
+animequote, quote, covid, earthquake, wiki
 
  ——————〈 Others 〉——————
 
- image, imginvert, imagestupid, wasted, jail, stickermeme, quotes, darkjoke, 
+image, imginvert, imagestupid, wasted, jail, stickermeme, quotes, darkjoke, 
 
  ——————〈 Fun 〉——————
 
- truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
+truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
 
  ——————〈 Essentials 〉——————
 
- translate, fliptext, toletter
+translate, fliptext, toletter
 
  ——————〈 NSFW 〉——————
 
- Type *${prefix}nsfw* then enable NSFW (Admin only!) 
+Type *${prefix}nsfw* then enable NSFW (Admin only!) 
 
- Then type *${prefix}nsfwmenu* to get full list of NSFW commands.
-
-
+Then type *${prefix}nsfwmenu* to get full list of NSFW commands.
 
 
 
- 『 *${global.BotName}* 』
+
+
+ 『  *${global.BotName}*  』
  Powered by: *Fantox*
 
  To use any of these commands type 
@@ -5344,7 +4849,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
                     buttons: buttonshelpm,
                     headerType: 4
                 }
-            Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
+            Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
                 }
 break
 
