@@ -3026,11 +3026,11 @@ case 'google': case 'search': {
  if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} apa arti cinta`)
  let google = require('google-it')
  google({'query': args.join(" ")}).then(res => {
- let teks = `「 *Google Search Engine* 」\n\n*Search term:* ${text}\n\n`
+ let teks = `「 *Google Search Engine* 」\n\n*Search term:* ${text}\n\n\n`
  for (let g of res) {
- teks += `*Title* : ${g.title}\n`
- teks += `*Description* : ${g.snippet}\n`
- teks += `*Link* : ${g.link}\n\n        -----------------------------------------------------------------------------\n\n`
+ teks += `*Title* : ${g.title}\n\n`
+ teks += `*Description* : ${g.snippet}\n\n`
+ teks += `*Link* : ${g.link}\n\n\n        -----------------------------------------------------------------------------\n\n`
  } 
  reply(teks)
  })
@@ -4849,33 +4849,7 @@ Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
                 }
 break
 
-/*
-
-case 'nsfwmenu':
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!AntiNsfw) return reply(mess.nonsfw)
-        reply(` ——————〈 NSFW Menu 〉——————\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
-    break
-
-    case 'coffee': case 'kopi': {
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-                let buttons = [
-                        {buttonId: `-coffee`, buttonText: {displayText: '>>'}, type: 1}
-                    ]
-                    let buttonMessage = {
-                        image: { url: 'https://coffee.alexflipnote.dev/random' },
-                        caption: `Here is your Coffee...`,
-                        footer: `${BotName}`,
-                        buttons: buttons,
-                        headerType: 4
-                    }
-                    Miku.sendMessage(m.chat, buttonMessage, { quoted: m })
-                }
-                break
-*/
-
+ 
 
 case '':
     if(isCmd){
@@ -4900,9 +4874,6 @@ case '':
             Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
                 }
 break
-
-
-
 
 
 
