@@ -1467,24 +1467,9 @@ case 'me': case 'profile': case 'p':
       pfp ='https://wallpapercave.com/wp/wp10524580.jpg'
     }
 
-     const profilexx = `*「 Profile Info 」*\n\n*User Name* : ${pushname}\n*Bio* : ${bioo}\n*Group Admin Status* : ${adn}\n*Level* : ${levelMenu}\n*Exp* : ${xpMenu} out of ${reqXp}\n*Role* : ${role}`
+     const profilexx = `*「  Profile Info  」*\n\n*User Name* : ${pushname}\n*Bio* : ${bioo}\n*Group Admin Status* : ${adn}\n*Level* : ${levelMenu}\n*Exp* : ${xpMenu} out of ${reqXp}\n*Role* : ${role}`
  
-/*
-    case 'sc': case 'script': case 'sourcecode': {
-        if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    teks = `*${global.BotName}'s Script*\n\n*GitHub*: ${global.BotSourceCode}\n\nDont forget to follow me on *GitHub* and give a ⭐️ to my projects. `
-    let buttons = [
-    {buttonId: `-menu`, buttonText: {displayText: '✨Bot Menu✨'}, type: 1}
-    ]
-    let buttonMessage = {
-    image: Thumb,
-    jpegThumbnail: BotLogo ,
-    caption: teks,
-    footer: `${BotName }`,
-    buttons: buttons,
-    headerType: 4,
-*/
+
 
 let buttonspro = [
     {buttonId: `-soulmate`, buttonText: {displayText: 'Your Soulmate'}, type: 1}
@@ -3041,11 +3026,11 @@ case 'google': case 'search': {
  if (!args[0]) return reply(`Example: ${prefix + command} <query>\nUses : ${prefix + command} apa arti cinta`)
  let google = require('google-it')
  google({'query': args.join(" ")}).then(res => {
- let teks = `_Google Search Engine_ : ${text}\n\n`
+ let teks = `「 *Google Search Engine* 」\n\n*Search term:* ${text}\n\n`
  for (let g of res) {
  teks += `*Title* : ${g.title}\n`
  teks += `*Description* : ${g.snippet}\n`
- teks += `*Link* : ${g.link}\n\n-----------------------\n\n`
+ teks += `*Link* : ${g.link}\n\n   ----------------------------------------------\n\n`
  } 
  reply(teks)
  })
