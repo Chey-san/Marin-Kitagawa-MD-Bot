@@ -1,6 +1,15 @@
-</br>
+<p align="center">
+   <a href="https://github.com/FantoX001">
+    <img src="https://c.tenor.com/SpDpac3s-ccAAAAC/anime-boy.gif">
+     <video width="320" height="240" controls>
+     <source src="" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+     </a>
+
+
 <p align="center"  >
-  <img src="https://wallpapercave.com/wp/wp11084303.jpg" width="850" alt="https://github.com/FantoX001" />
+  <img src="https://wallpapercave.com/wp/wp11084303.jpg" width="850" alt="https://github.com/FantoX001">
 </p>
 <h1 align="center"> 𝘚𝘩𝘪𝘬𝘪𝘮𝘰𝘳𝘪 𝘔𝘶𝘭𝘵𝘪 𝘋𝘦𝘷𝘪𝘤𝘦 
 </h1>
