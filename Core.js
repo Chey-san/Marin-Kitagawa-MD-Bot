@@ -5337,7 +5337,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
                 { quickReplyButton: { displayText: `Bot Owner`, id: '-owner'} }
                 ]
                 let buttonMessage = {
-                    image: { url: 'https://wallpapercave.com/wp/wp10524580.jpg' },
+                    file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./trash/miku.mp4'),gifPlayback:true,caption:hlp},{quoted:m}),
                     caption: helpmenu,
                     footer: `${BotName}`,
                     buttons: butHelpm,
