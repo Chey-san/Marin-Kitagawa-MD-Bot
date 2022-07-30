@@ -3030,7 +3030,7 @@ case 'google': case 'search': {
  for (let g of res) {
  teks += `*Title* : ${g.title}\n`
  teks += `*Description* : ${g.snippet}\n`
- teks += `*Link* : ${g.link}\n\n   ----------------------------------------------\n\n`
+ teks += `*Link* : ${g.link}\n\n        -----------------------------------------------------------------------------\n\n`
  } 
  reply(teks)
  })
