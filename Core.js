@@ -1430,14 +1430,15 @@ switch(command) {
     footer: `${BotName }`,
     buttons: buttons,
     headerType: 4,
-    contextInfo:{externalAdReply:{
+    /*contextInfo:{externalAdReply:{
     title:"Powered by Fantox",
     body: " ", 
     thumbnail: fs.readFileSync("Assets/pic2.jpg"),
     mediaType:1,
     mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
     sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
-    }}
+    }}*/
+    
     }
     Miku.sendMessage(m.chat, buttonMessage, { quoted: m })
     }
