@@ -5386,10 +5386,10 @@ case '':
  const needhelpmenu = `Do you mean need help? Type *${prefix}help* or press the button below.`
      
          let butRun = [
-                { quickReplyButton: { displayText: `Help`, id: '-help'} }
+                {buttonId: `-help`, buttonText: {displayText: 'Help'}, type: 1}
                 ]
                 let buttonMessage = {
-                    image: BotLogo ,
+                    file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku.mp4'),gifPlayback:true,caption:needhelpmenu},{quoted:m}),
                     caption: needhelpmenu,
                     footer: `${global.BotName}`,
                     buttons: butRun,
