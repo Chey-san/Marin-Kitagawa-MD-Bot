@@ -1438,7 +1438,7 @@ switch(command) {
     mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
     sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
     }}*/
-    
+
     }
     Miku.sendMessage(m.chat, buttonMessage, { quoted: m })
     }
@@ -1503,12 +1503,12 @@ var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-Miku.sendMessage(from, {text: `\`\`\`*「 _Notice_ 」*\`\`\`\n\nThis group is banned from using bot. So, here nobody can use me anymore!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+Miku.sendMessage(from, {text: `\`\`\`「 Notice 」\`\`\`\n\nThis group is banned from using bot. So, here nobody can use me anymore!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
 if (!isBanChat) return replay('This Group is Already Banned from using me!')
 let off = banchat.indexOf(from)
 banchat.splice(off, 1)
-replay('This Group has been banned from using me!')
+replay('This Group has been *unbanned* from using me!')
 } else {
   let buttonsntnsfw = [
   { buttonId: `-bangroup on`, buttonText: { displayText: 'Ban Group' }, type: 1 },
@@ -2485,7 +2485,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!AntiLink) return replay('Already deactivated!')
  let off = ntilink.indexOf(from)
@@ -2518,7 +2518,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!AntiLinkYoutubeVid) return replay('Already deactivated')
  let off = ntilinkytvid.indexOf(from)
@@ -2552,7 +2552,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!AntiLinkYoutubeChannel) return replay('Already deactivated')
  let off = ntilinkytch.indexOf(from)
@@ -2585,7 +2585,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!AntiLinkInstagram) return replay('Already deactivated')
  let off = ntilinkig.indexOf(from)
@@ -2617,7 +2617,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!AntiLinkFacebook) return replay('Already deactivated')
  let off = ntilinkfb.indexOf(from)
@@ -2650,7 +2650,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!AntiLinkTelegram) return replay('Already deactivated')
  let off = ntilinkig.indexOf(from)
@@ -2683,7 +2683,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!AntiLinkTiktok) return replay('Already deactivated')
  let off = ntilinktt.indexOf(from)
@@ -2715,7 +2715,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!AntiLinkTwitter) return replay('Already deactivated')
  let off = ntilinktwt.indexOf(from)
@@ -2748,7 +2748,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink System Activated!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!AntiLinkAll) return replay('Already deactivated')
  let off = ntilinkall.indexOf(from)
@@ -2781,7 +2781,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntivirus is enabled!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntivirus is enabled!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!antiVirtex) return replay('Already deactivated')
  let off = ntvirtex.indexOf(from)
@@ -2813,7 +2813,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Warning_ 」\`\`\`\n\nAntilink is enabled!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink is enabled!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!antiWame) return replay('Already deactivated')
  let off = nttoxic.indexOf(from)
@@ -2846,7 +2846,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 _Notice_ 」\`\`\`\n\nNSFW(not safe for work) feature has been enabled in this group, which means anyone here can accesss Adult commands!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`「 Notice 」\`\`\`\n\nNSFW(not safe for work) feature has been enabled in this group, which means anyone here can accesss Adult commands!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!AntiNsfw) return replay('Already deactivated')
  let off = ntnsfw.indexOf(from)
@@ -2867,7 +2867,7 @@ case 'delete': case 'del': {
     if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
 if (!isCreator) return replay(mess.botowner)
-if (!args[0]) return replay(`Select add or del(add to ban, del to unban), For Example: Reply *${prefix}ban add* to the user u want to ban.`)
+if (!args[0]) return replay(`Select add or del (add to ban, del to unban), For Example: Reply *${prefix}ban add* to the user you want to ban.`)
 if (args[1]) {
 orgnye = args[1] + "@s.whatsapp.net"
 } else if (m.quoted) {
@@ -2877,12 +2877,12 @@ const isBane = banUser.includes(orgnye)
 if (args[0] === "add") {
 if (isBane) return ads('User is already banned.')
 banUser.push(orgnye)
-replay(`Successfully _Banned_ the user.`)
+replay(`Successfully Banned the user.`)
 } else if (args[0] === "del") {
 if (!isBane) return ads('User is already unbanned.')
 let delbans = banUser.indexOf(orgnye)
 banUser.splice(delbans, 1)
-replay(`Successfully _Unbanned_ the user.`)
+replay(`Successfully Unbanned the user.`)
 } else {
 replay("Error")
 }
@@ -2905,7 +2905,7 @@ case 'listonline': case 'listaktif': case 'here':{
     if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
 if (!isCreator) return replay(mess.botowner)
-if (!args[0]) return replay(`Select add or del(add to ban, del to unban), For Example: Reply *${prefix}ban add* to the user u want to ban`)
+if (!args[0]) return replay(`Select add or del (add to ban, del to unban), For Example: Reply *${prefix}ban add* to the user you want to ban.`)
 if (args[1]) {
 orgnye = args[1] + "@s.whatsapp.net"
 } else if (m.quoted) {
@@ -2933,7 +2933,7 @@ case 'happymod': {
  if (isBanChat) return reply(mess.bangc)
  if (!args.join(" ")) return replay(`Example : ${prefix + command} Kinemaster`)
  yogipw.happymod(args.join(" ")).then(async(res) => {
- teks = '```「 _HappyMod Search Engine_ 」```'
+ teks = '```「 HappyMod Search Engine 」```'
  for (let i of res) {
  teks += `\n\n${i.name}\n`
  teks += `${i.link}`
