@@ -5337,7 +5337,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
                 { quickReplyButton: { displayText: `Bot Owner`, id: '-owner'} }
                 ]
                 let buttonMessage = {
-                    file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./trash/miku.mp4'),gifPlayback:true,caption:helpmenu},{quoted:m}),
+                    file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku.mp4'),gifPlayback:true,caption:helpmenu},{quoted:m}),
                     caption: helpmenu,
                     footer: `${BotName}`,
                     buttons: butHelpm,
