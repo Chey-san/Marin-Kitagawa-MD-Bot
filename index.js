@@ -129,7 +129,7 @@ let Mikubuttons = [
     let buttonMessage = {
     jpegThumbnail:buffer,
     mentions: [num],
-    caption: MikuText,
+    caption: Mikutext,
     footer: `${global.BotName}`,
     buttons: Mikubuttons,
     headerType: 4,
@@ -152,7 +152,7 @@ let Mikubuttons = [
     let buttonMessage = {
     jpegThumbnail:buffer,
     mentions: [num],
-    caption: MikuText,
+    caption: Mikutext,
     footer: `${global.BotName}`,
     buttons: Mikubuttons,
     headerType: 4,
