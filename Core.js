@@ -1445,7 +1445,9 @@ switch(command) {
     break
 
 
-case 'me': case 'profile': case 'p':{
+case 'me': case 'profile': case 'p':
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
   if (!isDarah){ addInventoriDarah(m.sender, DarahAwal) }
   if (!isInventory){ addInventori(m.sender) }
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
@@ -1464,7 +1466,7 @@ case 'me': case 'profile': case 'p':{
      
       pfp ='https://wallpapercave.com/wp/wp10524580.jpg'
     }
-    
+
      const profilexx = `
 *「 Profile Info 」*
 
@@ -1488,7 +1490,7 @@ case 'me': case 'profile': case 'p':{
                 headerType: 4
             }
         Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
-        	}
+        	
             break
 
 
