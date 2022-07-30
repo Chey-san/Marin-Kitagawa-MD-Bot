@@ -270,11 +270,11 @@ const isImage = (m.type === 'imageMessage')
 _sewa.expiredCheck(Miku, sewa)
 
 const reply = (teks) => {
-            Miku.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.BotName}`,"body": `Thanks for using Miku`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Assets/pic2.jpg`),"sourceUrl": `${SupportGroupLink}`}}}, { quoted: m})
+            Miku.sendMessage(m.chat, { text: teks},{ quoted: m})
         }
         
         const replay = (teks) => {
-            Miku.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.BotName}`,"body": `Thanks for using Miku`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Assets/pic2.jpg`),"sourceUrl": `${SupportGroupLink}`}}}, { quoted: m})
+            Miku.sendMessage(m.chat, { text: teks}, { quoted: m})
         }
         
 
