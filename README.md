@@ -82,3 +82,10 @@ I don't have any contributor in this project. Feel free to contribute.
 ## Help:
 - [`Follow`](https://github.com/FantoX001/#follow) me on GitHub to make me feel motivated.
 - Give my project a ⭐ if you liked it.
+
+     
+## Credits and Appretiation:
+
+-   `Adiwajshing` sir for [Baileys](https://github.com/adiwajshing/baileys)
+-   `Arus~Bots` team for [Mizuhara](https://github.com/Arus-Bots/Mizuhara)
+-   `Xeon` for [Cheems](https://github.com/DGXeon/CheemsBot-MD2)
