@@ -1630,7 +1630,7 @@ xfarrapi.Film(q)
     .then(data => {console.log(data)
     let krl = `*Search Term:* ${q}\n\n`
 			    for (let i of data) {
-                krl += (`--------------------\n*Movie Name:* ${i.judul}\n *Quality :* ${i.quality}\n *Type : ${i.type}*\n *Uploaded on :* ${i.upload}\n *Source URL :* ${i.link}\n`)
+                krl += (`-----------------------------------------------------------------------------\n\n\n*Movie Name:* ${i.judul}\n *Quality :* ${i.quality}\n *Type : ${i.type}*\n *Uploaded on :* ${i.upload}\n *Source URL :* ${i.link}\n\n\n`)
                 }
                Miku.sendMessage(from, { image: { url: data[0].thumb}, caption: krl }, { quoted: fdocs })
 });
@@ -2464,7 +2464,7 @@ case 'happymod': {
  let teks = '```「 YouTube search Engine 」```\n\n Search Term: '+text+'\n\n'
  let no = 1
  for (let i of search.all) {
- teks += `Result No : ${no++}\nTitle : ${i.title}\nViews : ${i.views}\nDuration : ${i.timestamp}\nUploaded : ${i.ago}\nAuthor : ${i.author.name}\nUrl : ${i.url}\n\n-------------------\n\n`
+ teks += `Result No : ${no++}\n\nTitle : ${i.title}\n\nViews : ${i.views}\n\nDuration : ${i.timestamp}\n\nUploaded : ${i.ago}\n\nAuthor : ${i.author.name}\n\nUrl : ${i.url}\n\n\n-----------------------------------------------------------------------------\n\n\n`
  }
  Miku.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
  }
