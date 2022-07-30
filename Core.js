@@ -1460,7 +1460,7 @@ case 'me': case 'profile': case 'p':{
   pfp ='https://wallpapercave.com/wp/wp10524580.jpg'
 }
      var flob = await getBuffer(picak+'User Profile')
-     var bio= await ShikimoriInc.fetchStatus(m.sender)
+     var bio= await Miku.fetchStatus(m.sender)
      var bioo = bio.status
      const adn= isAdmins? "True":"False"
      const profilexx = `
