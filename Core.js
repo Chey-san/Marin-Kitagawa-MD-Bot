@@ -5334,14 +5334,14 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
 
  Type *${prefix}help* to get full command list.`
      
-         let butHelpm = [
-                { quickReplyButton: { displayText: `Bot Owner`, id: '-owner'} }
-                ]
+ let buttonshelpm = [
+    {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
+    ]
                 let buttonMessage = {
                     file: Miku.sendMessage(m.chat,{video:fs.readFileSync('./system/miku.mp4'),gifPlayback:true,caption:helpmenu},{quoted:m}),
                     caption: helpmenu,
                     footer: `${BotName}`,
-                    buttons: butHelpm,
+                    buttons: buttonshelpm,
                     headerType: 4
                 }
             Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
