@@ -38,6 +38,19 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FantoX001/Miku-MD)
 
+## Heroku Builbpacks used:
+
+```
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+``` 
+```
+https://github.com/clhuang/heroku-buildpack-webp-binaries.git```
+```
+```
+heroku/nodejs
+```
+
+
 ## Join My Whatsapp Group for Support
 
 <a href="https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"><img src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
