@@ -47,7 +47,7 @@
 #### ✧ Create a `random app` in Heroku with any name.
 #### ✧ Connect your `GitHub` with `Heroku`
 #### ✧ Then connect `Miku's repo` from your GitHub.
-#### ✧ Go to Heroku's `settings` ----> `Add Buildpacks` then connect these 3 buildpacks one by one mentionned below.
+#### ✧ Go to Heroku's `settings` ----> `Add Buildpacks` then connect these 3 buildpacks one by one mentionned    below.
 #### ✧ Then come back to `Heroku` ----> `Deploy` then deploy the app
 #### ✧ After deploy is finished goto `Heroku` ----> `Resources` and turn on the switch.
 #### ✧ Enjoy :)
