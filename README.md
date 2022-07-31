@@ -27,10 +27,12 @@
   </a>
      
 ## Heroku Deployment Method 1
+
+#### ✧ Fork this repo.
 #### ✧ Click this scan button below and scan the given QR within 10 seconds from your WhatsApp. 
 <a href="https://shikimoriqr.herokuapp.com/"><img src="https://play-lh.googleusercontent.com/901aMQFFnVoX2T-YuJmTIwpPve_SUgMv_QSyzMSPtAqt_l0CyXN1DxfD6xXU0r2f9iM=w240-h480-rw" width="100" />
 </a>
-#### ✧ Next download that `session.json` file and upload it on the hompage of your [`Fork`](https://github.com/FantoX001/Miku-MD/fork).
+#### ✧ Next download that `session.json` file and replace it with the older one present the hompage of your [`Fork`](https://github.com/FantoX001/Miku-MD/fork).
 
 #### ✧ After that edit the `README.md` file and change the template link present on line no:`39` with your forked repo link.(Example: `https://github.com/<your GitHub username>/Miku-MD`)
 
@@ -42,7 +44,7 @@
 ## Heroku Deployment Method 2
 
 #### ✧ `Fork` this repo.
-#### ✧ `Scan` the QR and upload the `session.json` file in the hompage of your `Fork`.
+#### ✧ `Scan` the QR , download the `session.json` file and replace it with the older one present on the hompage of your `Fork`.
 #### ✧ Go to your `Heroku` account.
 #### ✧ Create a `random app` in Heroku with any name.
 #### ✧ Connect your `GitHub` with `Heroku`
