@@ -114,7 +114,7 @@ I don't have any contributor in this project. Feel free to contribute.
 - Give my project a ⭐ if you liked it.
 
      
-## Credits and Appretiation:
+## Credits and Appreciation:
 
 -   `Adiwajshing` sir for [Baileys](https://github.com/adiwajshing/baileys).
 -   `Arus~Bots` team for [Mizuhara](https://github.com/Arus-Bots/Mizuhara).
