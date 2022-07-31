@@ -3514,28 +3514,14 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  case 'ytvd': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
- Miku.sendMessage(from, {video:{url:args[0]}, mimetype:"video/mp4", caption:"Success", contextInfo:{externalAdReply:{
- title:`${global.BotName}`,
- body:`${global.BotName}`,
- thumbnail: log0,
- mediaType:2,
- mediaUrl: `${global.websitex}`,
- sourceUrl: `${global.websitex}`
- }}}, {quoted:m})
+ Miku.sendMessage(from, {video:{url:args[0]}, mimetype:"video/mp4", caption:"Success",}, {quoted:m})
  }
  break
 
  case 'ytad': {
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
- Miku.sendMessage(from, {audio:{url:args[0]}, mimetype:"audio/mp4", ptt:true, contextInfo:{externalAdReply:{
- title:`${global.BotName}`,
- body:`${global.BotName}`,
- thumbnail: BotLogo,
- mediaType:2,
- mediaUrl: `${global.websitex}`,
- sourceUrl: `${global.websitex}`
- }}}, {quoted:m})
+ Miku.sendMessage(from, {audio:{url:args[0]}, mimetype:"audio/mp4", ptt:true}, {quoted:m})
  }
  break
  
@@ -3547,7 +3533,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
    xeonkey.Youtube(`${text}`).then(async (data) => {
    if (data.medias[0].formattedSize.split('MB')[0] >= 999) return reply('*File Over Limit* '+util.format(data)) 
    cap = `
-   「 _Youtube Shorts_ 」
+   「  *Youtube Shorts*  」
  *TITLE:* ${data.title}\n*QUALITY:* ${data.medias[0].quality}\n*SIZE:* ${data.medias[0].formattedSize}\n*DURATION* ${data.duration}\n*LINK:* ${data.url}\n\n*${BotName}*`
    buf = await getBuffer(data.thumbnail)
    Miku.sendMessage(m.chat, { image: { url: data.thumbnail }, jpegThumbnail:buf, caption: `${cap}` }, { quoted: m })
