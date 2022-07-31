@@ -1577,36 +1577,7 @@ case 'limituser': case 'userlimit': case 'limit':
               }
              break
     
-case 'leaderboard': case 'leaderboards':
-             if (isBan) return reply(mess.banned)	 			
-            if (isBanChat) return reply(mess.bangc)
-            {      
-               let txt = ` 「 *LEADERBOARD* 」\n\n`
-                 for (let i of _buruan){
-                 txt += `_User Name_ : *${pushname}*\n`
-                 txt += `_Level_ : ${levelMenu}\n`
-                 txt += `_Exp_ : ${xpMenu} \ ${reqXp}\n`
-                 txt += `_Role_ : ${role}\n\n`
-                 }
-                reply(txt)       
-              }
 
-
-case 'exp': case 'xp':
-         if (isBan) return reply(mess.banned)	 			
-        if (isBanChat) return reply(mess.bangc)
-        {      
-           let txt = ` 「 *User Experience* 」\n\n`
-             for (let i of _buruan){
-             txt += `_User Name_ : *${pushname}*\n`
-             txt += `_Level_ : ${levelMenu}\n`
-             txt += `_Exp_ : ${xpMenu} \ ${reqXp}\n`
-             txt += `_Role_ : ${role}\n\n`
-           
-             }
-            reply(txt)       
-          }
-         break
 
 
 case 'ringtone': {
@@ -4715,7 +4686,7 @@ Here's the list of my Commands.
 
  *━━━━━━〈  Core  〉━━━━━━*
 
-🏮 profile, exp, leaderboard, help, delete, listgc, listpc, welcome, speedtest, ping, support, repo, script 
+🏮 profile, help, delete, listgc, listpc, welcome, speedtest, ping, support, repo, script 
  
  *━━━━━━〈  Owner  〉━━━━━━*
 
