@@ -23,11 +23,12 @@
     
     
 <a href="https://github.com/FantoX001">
-    <img src="(https://visitor-badge.glitch.me/badge?page_id=https://github.com/FantoX001/Shikimori-MD.visitor-badge&left_text=Total%20Repo%20Visitors)">
+    <img src="(https://visitor-badge.glitch.me/badge?page_id=https://github.com/FantoX001/Miku-MD.visitor-badge&left_text=Total%20Repo%20Visitors)">
   </a>
+</br>
+     </br>  
      
-     
-## Use `Heroku Deploy Method 2` for easy and more convenient deploy(Trust me).    
+### ✧✧ Use `Heroku Deploy Method 2` for easy and more convenient deploy(Trust me).    
 </br>
 
 ## Heroku Deployment Method 1:
