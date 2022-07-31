@@ -26,7 +26,7 @@
     <img src="(https://visitor-badge.glitch.me/badge?page_id=https://github.com/FantoX001/Shikimori-MD.visitor-badge&left_text=Total%20Repo%20Visitors)">
   </a>
      
-## Heroku Deployment Method
+## Heroku Deployment Method 1
 #### ✧ Click this scan button below and scan the given QR within 10 seconds from your WhatsApp. 
 <a href="https://shikimoriqr.herokuapp.com/"><img src="https://play-lh.googleusercontent.com/901aMQFFnVoX2T-YuJmTIwpPve_SUgMv_QSyzMSPtAqt_l0CyXN1DxfD6xXU0r2f9iM=w240-h480-rw" width="100" />
 </a>
@@ -49,6 +49,22 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git```
 ```
 heroku/nodejs
 ```
+
+
+
+## Heroku Deployment Method 2
+
+#### ✧ Fork this repo.
+#### ✧ Scan the QR and upload the session.json file in the hompage of your Fork.
+#### ✧ Go to your Heroku account.
+#### ✧ Create a random app in Heroku with any name.
+#### ✧ Connect your GitHub with Heroku
+#### ✧ Then connect Miku's repo from your GitHub.
+#### ✧ Go to Heroku's settings ----> Add Buildpacks then connect these 3 buildpacks one by one mentionned below.
+#### ✧ Then come back to Heroku ----> Deploy then deploy the app
+#### ✧ After deploy is finished goto Heroku ----> Resources and turn on the switch.
+#### ✧ Enjoy :)
+
 
 
 ## Join My Whatsapp Group for Support
