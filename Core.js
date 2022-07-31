@@ -1625,7 +1625,7 @@ let buttons = [
         ]
         let buttonMessage = {
             image: {url:wallpaper[i].image},
-            caption: `Title : ${result.title}\nCategory : ${result.type}\nDetail : ${result.source}\nMedia Url : ${result.image[2] || result.image[1] || result.image[0]}`,
+            caption: `*Search term:* ${q}`,
             footer: `${BotName}`,
             buttons: buttons,
             headerType: 4
