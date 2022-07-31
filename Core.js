@@ -2557,7 +2557,7 @@ if (isBanChat) return reply(mess.bangc)
  if (!isBotAdmins) return replay(mess.botadmin)
  if (!isAdmins && !isCreator) return replay(mess.useradmin)
  let response = await Miku.groupInviteCode(m.chat)
- Miku.sendMessage(m.chat, {text:`${groupMetadata.subject} \n\n_Group Link_ : \nhttps://chat.whatsapp.com/${response}l`, "contextInfo": {
+ Miku.sendMessage(m.chat, {text:`*Group Name:* *${groupMetadata.subject}* \n\n*Group Link :* \nhttps://chat.whatsapp.com/${response}l`, "contextInfo": {
  mimetype: "image/jpeg",
  text: `${global.OwnerName}`,
  "forwardingScore": 1000000000,
@@ -4848,47 +4848,6 @@ Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
             Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
                 }
 break
-
-case 'grouplink': case 'gclink': {
-
-   
-    if (isBan) return reply(mess.banned)	 			
-    if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-    
-    let response = await Miku.groupInviteCode(m.chat)
-    
-    Miku.sendMessage(m.chat, {text:`*Group Name:* ${groupMetadata.subject} : \n\n*Link:*  https://chat.whatsapp.com/${response}l    \n`, "contextInfo": {
-    
-    mimetype: "image/jpeg",
-    
-    text: `${global.OwnerName}`,
-    
-    "forwardingScore": 1000000000,
-    
-    isForwarded: true,
-    
-    sendEphemeral: true,
-    
-    "externalAdReply": {
-    
-    "title": `${global.BotName}`,
-    
-    "body": `Spread this group link Dear`,
-    
-    "previewType": "PHOTO",
-    
-    "thumbnailUrl": Thumb1,
-    
-    "thumbnail": BotLogo,
-    
-    "sourceUrl": `${global.websitex}`
-    
-    }}}, { quoted: m, detectLink: true })
-    
-    }
-    
-    break
 
 
 
