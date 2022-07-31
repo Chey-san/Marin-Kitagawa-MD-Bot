@@ -38,19 +38,6 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FantoX001/Miku-MD)
 
-## Heroku Builbpacks used:
-
-```
-https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
-``` 
-```
-https://github.com/clhuang/heroku-buildpack-webp-binaries.git```
-```
-```
-heroku/nodejs
-```
-
-
 
 ## Heroku Deployment Method 2
 
@@ -64,6 +51,20 @@ heroku/nodejs
 #### ✧ Then come back to Heroku ----> Deploy then deploy the app
 #### ✧ After deploy is finished goto Heroku ----> Resources and turn on the switch.
 #### ✧ Enjoy :)
+
+
+## Heroku Builbpacks used:
+
+```
+https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
+``` 
+```
+https://github.com/clhuang/heroku-buildpack-webp-binaries.git```
+```
+```
+heroku/nodejs
+```
+
 
 
 
