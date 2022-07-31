@@ -2884,14 +2884,7 @@ _Media Url_ : ${images}`,
 footer: `${global.BotName}`,
 buttons: buttons,
 headerType: 4,
-contextInfo:{externalAdReply:{
-title:`${global.OwnerName}`,
-body:`${global.OwnerName}`,
-thumbnail: BotLogo,
-mediaType:2,
-mediaUrl: `${global.websitex}`,
-sourceUrl: `${global.websitex}`
-}}
+
 }
 Miku.sendMessage(m.chat, buttonMessage, { quoted: m })
 })
@@ -2991,14 +2984,7 @@ case 'jpeg': {
 if (isBanChat) return reply(mess.bangc)
  if (!args[0]) return reply(`Please provide link!`)
  try {
- Miku.sendMessage(from, {image:{url:args[0]}, caption:"Success!", contextInfo:{externalAdReply:{
- title:`${global.BotName}`,
- body:`${global.OwnerName}`,
- thumbnail: BotLogo,
- mediaType:2,
- mediaUrl: `${global.websitex}`,
- sourceUrl: `${global.websitex}`
- }}}, {quoted:m})
+ Miku.sendMessage(from, {image:{url:args[0]}, caption:"Success!"}, {quoted:m})
  } catch {
  reply("Link error")
  }
@@ -3080,14 +3066,7 @@ caption: teks,
 footer: `${pushname}`,
 buttons: buttons,
 headerType: 4,
-contextInfo:{externalAdReply:{
-title:`${global.BotName}`,
-body:lotwit.title ? lotwit.title : "Miku Twitter Downloader",
-thumbnail: BotLogo,
-mediaType:1,
-mediaUrl: args[0],
-sourceUrl: args[0]
-}}
+
 }
 Miku.sendMessage(from, buttonMessage, {quoted:m})
 } catch {
@@ -3108,14 +3087,7 @@ case 'twddlxx': {
  footer: `${pushname}`,
  buttons: buttons,
  headerType: 4,
- contextInfo:{externalAdReply:{
- title:`${global.BotName}`,
- body: "「 _Twitter Downloader_ 」",
- thumbnail: BotLogo,
- mediaType:1,
- mediaUrl: args[0],
- sourceUrl: args[0]
- }}
+
  }
  Miku.sendMessage(from, buttonMessage, {quoted:m})
  }
@@ -3179,14 +3151,7 @@ caption: teks,
 footer: `${pushname}`,
 buttons: buttons,
 headerType: 4,
-contextInfo:{externalAdReply:{
-title:`${global.BotName}`,
-body:"「 *Facebook Downloader* 」",
-thumbnail: BotLogo,
-mediaType:1,
-mediaUrl: args[0],
-sourceUrl: args[0]
-}}
+
 }
 Miku.sendMessage(from, buttonMessage, {quoted:m})
 } catch {
@@ -3207,14 +3172,7 @@ case 'fbddlxx': {
  footer: `${pushname}`,
  buttons: buttons,
  headerType: 4,
- contextInfo:{externalAdReply:{
- title:`${global.BotName}`,
- body: " 「 _Facebook Downloader_ 」",
- thumbnail: BotLogo,
- mediaType:1,
- mediaUrl: args[0],
- sourceUrl: args[0]
- }}
+
  }
  Miku.sendMessage(from, buttonMessage, {quoted:m})
  }
@@ -3242,14 +3200,7 @@ caption: texttk,
 footer: `${BotName}`,
 buttons: buttons,
 headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${OwnerName}`,
-body: `${pushname}`,
-thumbnail: BotLogo,
-mediaType:1,
-mediaUrl: q,
-sourceUrl: q
-}}
+
 }
 Miku.sendMessage(from, buttonMessage, {quoted:m})
 }
@@ -3343,14 +3294,7 @@ caption: textyt,
 footer: BotName,
 buttons: buttons,
 headerType: 4,
-contextInfo:{externalAdReply:{
-title: res.title,
-body: ownername,
-thumbnail: {url:res.thumb},
-mediaType:2,
-mediaUrl: args[0],
-sourceUrl: args[0]
-}}
+
 }
 Miku.sendMessage(from, buttonMessage, {quoted:m})
 }).catch(_ => _)
@@ -3532,14 +3476,7 @@ case 'pinterest': case 'pin': {
  footer: `${global.BotName}`,
  buttons: buttons,
  headerType: 4,
- contextInfo:{externalAdReply:{
- title:`${global.BotName}`,
- body:`${global.OwnerNumber}`,
- thumbnail: BotLogo,
- mediaType:2,
- mediaUrl: `${global.websitex}`,
- sourceUrl: `${global.websitex}`
- }}
+ 
  }
  Miku.sendMessage(m.chat, buttonMessage, { quoted: m })
  }).catch(_ => _)
