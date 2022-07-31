@@ -41,19 +41,19 @@
 
 ## Heroku Deployment Method 2
 
-#### ✧ Fork this repo.
-#### ✧ Scan the QR and upload the session.json file in the hompage of your Fork.
-#### ✧ Go to your Heroku account.
-#### ✧ Create a random app in Heroku with any name.
-#### ✧ Connect your GitHub with Heroku
-#### ✧ Then connect Miku's repo from your GitHub.
-#### ✧ Go to Heroku's settings ----> Add Buildpacks then connect these 3 buildpacks one by one mentionned below.
-#### ✧ Then come back to Heroku ----> Deploy then deploy the app
-#### ✧ After deploy is finished goto Heroku ----> Resources and turn on the switch.
+#### ✧ `Fork` this repo.
+#### ✧ `Scan` the QR and upload the `session.json` file in the hompage of your `Fork`.
+#### ✧ Go to your `Heroku` account.
+#### ✧ Create a `random app` in Heroku with any name.
+#### ✧ Connect your `GitHub` with `Heroku`
+#### ✧ Then connect `Miku's repo` from your GitHub.
+#### ✧ Go to Heroku's `settings` ----> `Add Buildpacks` then connect these 3 buildpacks one by one mentionned below.
+#### ✧ Then come back to `Heroku` ----> `Deploy` then deploy the app
+#### ✧ After deploy is finished goto `Heroku` ----> `Resources` and turn on the switch.
 #### ✧ Enjoy :)
 
 
-## Heroku Builbpacks used:
+## Heroku Builbpacks:
 
 ```
 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
@@ -91,7 +91,7 @@ npm start
 ```
 
 ## License and recode Permission:
-- So, it's the most asked question !
+- Well, it's the most asked question !
 - And the answer is `"Permission is hereby granted for 100% modification/recode."`
 - And this project comes under [`MIT`](https://github.com/FantoX001/Miku-MD/blob/main/LICENSE.md) lincense.
 - Please at least [`Follow`](https://github.com/FantoX001/#follow) me on GitHub to show some appreciation.
@@ -116,6 +116,6 @@ I don't have any contributor in this project. Feel free to contribute.
      
 ## Credits and Appretiation:
 
--   `Adiwajshing` sir for [Baileys](https://github.com/adiwajshing/baileys)
--   `Arus~Bots` team for [Mizuhara](https://github.com/Arus-Bots/Mizuhara)
--   `Xeon` for [Cheems](https://github.com/DGXeon/CheemsBot-MD2)
+-   `Adiwajshing` sir for [Baileys](https://github.com/adiwajshing/baileys).
+-   `Arus~Bots` team for [Mizuhara](https://github.com/Arus-Bots/Mizuhara).
+-   `Xeon` for [Cheems](https://github.com/DGXeon/CheemsBot-MD2).
