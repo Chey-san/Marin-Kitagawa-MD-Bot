@@ -3514,59 +3514,7 @@ reply(`Send Image/Video With Caption ${prefix + command}\nVideo Duration 1-9 sec
 break
 
 
-case 'invertxxx':
-case 'imginvert':
-case 'imageinvertxxx':{
-    if (isBan) return reply(mess.banned)
-    if (isBanChat) return reply(mess.bangc)
-reply(mess.waiting)
-if (/image/.test(mime)) {
-let dwnld = await quoted.download()
-let { floNime } = require('./lib/uploader')
-let fatGanss = await floNime(dwnld)
-buffer = `http://api.lolhuman.xyz/api/editor/invert?apikey=${lolkey}&img=${fatGanss.result.url}`
-Miku.sendMessage(from, {image:{url:buffer}, caption:"Here it is..."}, {quoted:m})
-}
-}
-break
 
-case 'stupidxxx':
-case 'imagestupid':
-    if (isBan) return reply(mess.banned)
-    if (isBanChat) return reply(mess.bangc)
-reply(mess.waiting)
-		anu = `http://api.lolhuman.xyz/api/toloserti?apikey=${lolkey}&name=${q}`
-		Miku.sendMessage(from, {image:{url:anu}, caption:"Here it is..."}, {quoted:m})
-		break
-
-case 'wasted':
-case 'imagewasted':{
-	if (isBan) return reply(mess.banned)
-    if (isBanChat) return reply(mess.bangc)
-reply(mess.waiting)
-if (/image/.test(mime)) {
-let dwnld = await quoted.download()
-let { floNime } = require('./lib/uploader')
-let fatGa = await floNime(dwnld)
-buffer = `https://api.lolhuman.xyz/api/editor/wasted?apikey=${lolkey}&img=${fatGa.result.url}`
-Miku.sendMessage(from, {image:{url:buffer}, caption:"Here it is..."}, {quoted:m})
-}
-}
-break
-
-case 'jail': case 'jailxxx':{
-	if (isBan) return reply(mess.banned)
-    if (isBanChat) return reply(mess.bangc)
-reply(mess.waiting)
-if (/image/.test(mime)) {
-let dwnld = await quoted.download()
-let { floNime } = require('./lib/uploader')
-let fatGan = await floNime(dwnld)
-buffer = `https://api.lolhuman.xyz/api/editor/jail?apikey=${lolkey}&img=${fatGan.result.url}`
-Miku.sendMessage(from, {image:{url:buffer}, caption:"Here it is..."}, {quoted:m})
-}
-}
-break
 
 case 'smeme': case 'stickermeme': case 'stickmeme': {
     if (isBan) return reply(mess.banned)
@@ -4469,10 +4417,12 @@ reply(mess.waiting)
 const { lyrics, lyricsv2 } = require('@bochilteam/scraper')
 const result = await lyricsv2(text).catch(async _ => await lyrics(text))
 reply(`
-_Title :_ ${result.title}
-_Author :_ ${result.author}
-_Lyrics :_ ${result.lyrics}
-_Url :_ ${result.link}
+*Title :* ${result.title}
+*Author :* ${result.author}
+*Url :* ${result.link}
+
+*Lyrics :* ${result.lyrics}
+
 `.trim())
 }
 break
@@ -4544,7 +4494,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
-I am *Miku Nakano*, a bot developed by Fantox.
+I am *Miku Nakano*, a bot developed by *Fantox*.
 
 🍁 My prefix is:  ${prefix}
 
@@ -4598,7 +4548,7 @@ Here's the list of my Commands.
 
  *━━━━━━〈  Others  〉━━━━━━*
 
-🏮 imginvert, imagestupid, wasted, jail, stickermeme, quotes, darkjoke 🏮
+🏮 stickermeme, quotes, darkjoke 
 
  *━━━━━━〈  Fun  〉━━━━━━*
 
