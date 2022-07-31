@@ -1507,8 +1507,8 @@ banchat.splice(off, 1)
 replay('This Group has been *unbanned* from using me!')
 } else {
   let buttonsntnsfw = [
-  { buttonId: `-bangroup on`, buttonText: { displayText: 'Ban Group' }, type: 1 },
-  { buttonId: `-bangroup off`, buttonText: { displayText: 'Unban Group' }, type: 1 }
+  { buttonId: `-bangroup on`, buttonText: { displayText: 'Ban' }, type: 1 },
+  { buttonId: `-bangroup off`, buttonText: { displayText: 'Unban' }, type: 1 }
   ]
   await Miku.sendButtonText(m.chat, buttonsntnsfw, `Please choose any Button below.\n\n *On / Off*`, `${global.BotName }`, m)
   }
@@ -1875,7 +1875,7 @@ case 'delete': case 'del': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
- let teks = ` 「 _Group Bot user list_ 」\n\nTotal ${anu.length} users are using bot in Groups.`
+ let teks = ` 「  Group Bot user list  」\n\nTotal ${anu.length} users are using bot in Groups.`
  for (let i of anu) {
   let metadata = await Miku.groupMetadata(i)
   if (metadata.owner === "undefined") {
@@ -1906,7 +1906,7 @@ case 'delete': case 'del': {
  if (args.length < 1) return replay(`Example:\n${prefix}fliptext ${OwnerName}`)
  quere = args.join(" ")
  flipe = quere.split('').reverse().join('')
- replay(`\`\`\`「 _Text Flipper Tool_ 」\`\`\`\n*Input text :*\n${quere}\n*Fliped text :*\n${flipe}`)
+ replay(`\`\`\`「  Text Flipper Tool  」\`\`\`\n*Input text :*\n${quere}\n*Fliped text :*\n${flipe}`)
  }
  break
 
@@ -1917,7 +1917,7 @@ case 'delete': case 'del': {
  try {
  quere = args.join(" ")
  convertes = await toHur(quere)
- replay(`\`\`\`「 _Word Maker Tool_ 」\`\`\`\n*Input Number :*\n${quere}\n*Converted Alphabet :*\n${convertes}`)
+ replay(`\`\`\`「  Word Maker Tool  」\`\`\`\n*Input Number :*\n${quere}\n*Converted Alphabet :*\n${convertes}`)
  } catch {
  replay(`Error!`)
  }
@@ -1956,7 +1956,7 @@ case 'delete': case 'del': {
  if (isBanChat) return reply(mess.bangc)
  if (!m.isGroup) return replay(mess.grouponly)
  if (!isAdmins && !isCreator) return reply(mess.useradmin)
- if (args.length < 1) return reply('Type on to _Enable_\nType off to _disable_')
+ if (args.length < 1) return reply('Type on to *Enable*\nType off to *Disable*')
  if (args[0] === 'on'){
  if (isLeveling) return reply(`Already activated`)
  _leveling.push(from)
@@ -1997,7 +1997,7 @@ case 'delete': case 'del': {
    { buttonId: `-antilinkgc on`, buttonText: { displayText: 'On' }, type: 1 },
    { buttonId: `-antilinkgc off`, buttonText: { displayText: 'Off' }, type: 1 }
    ]
-   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\n_On_ to enable\n_Off_ to disable`, `${global.BotName}`, m)
+   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below On / Off`, `${global.BotName}`, m)
    }
    }
    break
@@ -2030,7 +2030,7 @@ case 'delete': case 'del': {
    { buttonId: `-antilinkyoutubevideo on`, buttonText: { displayText: 'On' }, type: 1 },
    { buttonId: `-antilinkyoutubevideo off`, buttonText: { displayText: 'Off' }, type: 1 }
    ]
-   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.BotName}`, m)
+   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below On / Off`, `${global.BotName}`, m)
    }
    }
    break
@@ -2064,7 +2064,7 @@ case 'delete': case 'del': {
    { buttonId: `-antilinkyoutubech on`, buttonText: { displayText: 'On' }, type: 1 },
    { buttonId: `-antilinkyoutubech off`, buttonText: { displayText: 'Off' }, type: 1 }
    ]
-   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.BotName}`, m)
+   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below On / Off`, `${global.BotName}`, m)
    }
    }
    break
@@ -2097,7 +2097,7 @@ case 'delete': case 'del': {
    { buttonId: `-antilinkinstagram on`, buttonText: { displayText: 'On' }, type: 1 },
    { buttonId: `-antilinkinstagram off`, buttonText: { displayText: 'Off' }, type: 1 }
    ]
-   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.BotName}`, m)
+   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below On / Off`, `${global.BotName}`, m)
    }
    }
    break
@@ -2129,7 +2129,7 @@ case 'delete': case 'del': {
    { buttonId: `-antilinkfacebook on`, buttonText: { displayText: 'On' }, type: 1 },
    { buttonId: `-antilinkfacebook off`, buttonText: { displayText: 'Off' }, type: 1 }
    ]
-   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.BotName}`, m)
+   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below On / Off `, `${global.BotName}`, m)
    }
    }
    break
@@ -2162,7 +2162,7 @@ case 'delete': case 'del': {
    { buttonId: `-antilinktelegram on`, buttonText: { displayText: 'On' }, type: 1 },
    { buttonId: `-antilinktelegram off`, buttonText: { displayText: 'Off' }, type: 1 }
    ]
-   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.BotName}`, m)
+   await Miku.sendButtonText(m.chat, buttonsntilink, `Please click the button below On / Off `, `${global.BotName}`, m)
    }
    }
    break
@@ -2266,38 +2266,6 @@ case 'delete': case 'del': {
    break
 
 
-   case 'antivirus': case 'antivirtex': {
-    if (isBan) return reply(mess.banned)	 			
- if (isBanChat) return reply(mess.bangc)
- if (!m.isGroup) return replay(mess.grouponly)
- if (!isBotAdmins) return replay(mess.botadmin)
- if (!isAdmins && !isCreator) return replay(mess.useradmin)
- if (args[0] === "on") {
- if (antiVirtex) return replay('Already activated')
- ntvirtex.push(from)
- replay('Activated antivirus !')
- var groupe = await Miku.groupMetadata(from)
- var members = groupe['participants']
- var mems = []
- members.map(async adm => {
- mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
- })
- Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntivirus is enabled!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
- } else if (args[0] === "off") {
- if (!antiVirtex) return replay('Already deactivated')
- let off = ntvirtex.indexOf(from)
- ntvirtex.splice(off, 1)
- replay('Deactivated antivirus !')
- } else {
-   let buttonsntvirtex = [
-   { buttonId: `-antivirus on`, buttonText: { displayText: 'On' }, type: 1 },
-   { buttonId: `-antivirus off`, buttonText: { displayText: 'Off' }, type: 1 }
-   ]
-   await Miku.sendButtonText(m.chat, buttonsntvirtex, `Please click the button below\n\nOn to enable\nOff to disable`, `${global.BotName}`, m)
-   }
-   }
-   break
-
    case 'antiwame': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -2314,7 +2282,7 @@ case 'delete': case 'del': {
  members.map(async adm => {
  mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
  })
- Miku.sendMessage(from, {text: `\`\`\`「 Warning 」\`\`\`\n\nAntilink is enabled!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+ Miku.sendMessage(from, {text: `\`\`\`*「  Warning  」*\`\`\`\n\nAntilink is enabled!`, contextInfo: { mentionedJid : mems }}, {quoted:m})
  } else if (args[0] === "off") {
  if (!antiWame) return replay('Already deactivated')
  let off = nttoxic.indexOf(from)
