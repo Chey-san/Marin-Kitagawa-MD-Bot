@@ -3514,7 +3514,7 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  case 'ytvd': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
- Miku.sendMessage(from, {video:{url:args[0]}, mimetype:"video/mp4", caption:"Success",}, {quoted:m})
+ Miku.sendMessage(from, {video:{url:args[0]}, mimetype:"video/mp4", caption:"Here it is...",}, {quoted:m})
  }
  break
 
