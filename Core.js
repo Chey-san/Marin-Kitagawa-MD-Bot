@@ -4627,7 +4627,7 @@ Here's the list of my Commands.
 
  *━━━━━━〈  Core  〉━━━━━━*
 
-🏮 profile, help, delete, listgc, listpc, welcome, speedtest, ping, support, repo, script 
+🏮 profile, help, delete, listgc, listpc, welcome, support, repo, script 
  
  *━━━━━━〈  Owner  〉━━━━━━*
 
