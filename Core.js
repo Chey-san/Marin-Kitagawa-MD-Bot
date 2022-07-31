@@ -3324,12 +3324,12 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  image: { url: anu.thumbnail },
  caption: `「  _Miku Youtube Player_  」
 
- Title : ${anu.title}
- Duration : ${anu.timestamp}
- Viewers : ${anu.views}
- Uploaded : ${anu.ago}
- Channel : ${anu.author.name}
- Url : ${anu.url}`,
+*Title :* ${anu.title}
+*Duration :* ${anu.timestamp}
+*Viewers :* ${anu.views}
+*Uploaded :* ${anu.ago}
+*Channel :* ${anu.author.name}
+*Url :* ${anu.url}`,
  footer: `${global.BotName}`,
  buttons: buttons,
  headerType: 4,
@@ -3346,10 +3346,10 @@ case 'music': case 'play': case 'song': case 'ytplay': {
  try {
  hx.youtube(args[0]).then(async(res) => {
  textyt = `「  _Miku Youtube Downloader_  」
- Title : ${res.title}
- Size : ${res.size}
- $Quality : ${res.quality}
- _Select video or audio and wait a while_`
+*Title :* ${res.title}
+*Size :* ${res.size}
+*Quality :* ${res.quality}
+*Select video or audio and wait a while*`
  let buttons = [
  {buttonId: `-ytvd ${res.link}`, buttonText: {displayText: '► Video'}, type: 1},
  {buttonId: `-ytad ${res.mp3}`, buttonText: {displayText: '♫ Audio'}, type: 1}
@@ -3560,7 +3560,7 @@ case 'wiki':
     if (isBanChat) return reply(mess.bangc)
 if (args.length < 1) return reply('What Are You Looking For?? ')
 const res2 = await wikiSearch(q).catch(e => {
-return reply('_[ ! ] Error Result Not Found_') 
+return reply('Error Result Not Found!') 
 }) 
 const result2 = `*Title :* ${res2[0].judul}\n*Wiki :* ${res2[0].wiki}`
 Miku.sendMessage(from, { image : { url : res2[0].thumb }, caption : result2}) 
@@ -3592,11 +3592,7 @@ if(!q) return reply('Pls enter a search term!')
 let play = await hx.playstore(q)
 let storee = '─────────────────────\n'
 for (let i of play){
-storee += `\n「 _Google Play_ 」\n
-- *Name* : ${i.name}
-- *Link* : ${i.link}\n
-- *Dev* : ${i.developer}
-- *Dev Link* : ${i.link_dev}\n─────────────────────`
+storee += `\n「  *Google Play*  」\n\n*Name* : ${i.name}\n*Link* : ${i.link}\n*Dev* : ${i.developer}*Dev Link* : ${i.link_dev}\n─────────────────────`
 }
 reply(storee)
 break
@@ -3692,7 +3688,7 @@ case 'charactercheck':
          "sing the chorus of the last song you played",
          "vn your ex/crush/girlfriend, says hi (name), wants to call, just a moment. I miss🥺👉🏼👈🏼",
          "Bang on the table (which is at home) until you get scolded for being noisy",
-         "Tell random people _I was just told I was your twin first, we separated, then I had plastic surgery. And this is the most ciyusss_ thing",
+         "Tell random people - I was just told I was your twin first, we separated, then I had plastic surgery. And this is the most ciyusss_ thing",
          "mention ex's name",
          "make 1 rhyme for the members!",
          "send ur whatsapp chat list",
@@ -3767,7 +3763,7 @@ case 'charactercheck':
      ]
                    const Mikudareww = dare[Math.floor(Math.random() * dare.length)]
                    buffer = await getBuffer(`https://wallpapercave.com/wp/wp10524609.jpg`)
-                   Miku.sendMessage(from, { image: buffer, caption: '_You have chosen Dare_\n\n'+ Mikudareww }, {quoted:m})
+                   Miku.sendMessage(from, { image: buffer, caption: '*You have chosen Dare*\n\n'+ Mikudareww }, {quoted:m})
                    break
                        
 
@@ -3867,7 +3863,7 @@ case 'truth':
              ]
                            const mikutruthww = truth[Math.floor(Math.random() * truth.length)]
                            buffer = await getBuffer(`https://wallpapercave.com/wp/wp10524609.jpg`)
-                           Miku.sendMessage(from, { image: buffer, caption: '_You have chosen Truth_\n'+ mikutruthww }, {quoted:m})
+                           Miku.sendMessage(from, { image: buffer, caption: '*You have chosen Truth*\n'+ mikutruthww }, {quoted:m})
                            break
 
 
@@ -3887,7 +3883,7 @@ if (!text) return reply(mess.linkm)
 if (!isUrl(args[0]) && !args[0].includes('mediafire.com')) return reply(`The link you provided is invalid`)
 const baby1 = await mediafireDl(text)
 if (baby1[0].size.split('MB')[0] >= 999) return reply('*File Over Limit* '+util.format(baby1))
-const result4 = `「 _Mediafire Downloader_ 」
+const result4 = `「  *Mediafire Downloader*  」
 				
 *Name* : ${baby1[0].nama}
 *Size* : ${baby1[0].size}
@@ -4267,43 +4263,43 @@ case 'anime':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
-	    if(!q) return reply(`Please proide a search term!\n\n_Example:_ ${prefix}anime naruto`)
+	    if(!q) return reply(`Please proide a search term!\n\n*Example:* ${prefix}anime naruto`)
 reply(mess.waiting)							
 const { Anime } =require("@shineiichijo/marika")
     const client = new Anime();
      let anime = await client.searchAnime(q)
     let result = anime.data[0];
     console.log(result)
-   let details = `_Title:_ ${result.title}\n`;
-    details += `_Format:_ ${result.type}\n`;
-    details += `_Status:_ ${result.status.toUpperCase().replace(/\_/g, " ")}\n`;
-    details += `_Total episodes:_ ${result.episodes}\n`;
-    details += `_Duration:_ ${result.duration}\n`;
-    details += `_Genres:_\n`;
+   let details = `*Title:* ${result.title}\n`;
+    details += `*Format:* ${result.type}\n`;
+    details += `*Status:* ${result.status.toUpperCase().replace(/\_/g, " ")}\n`;
+    details += `*Total episodes:* ${result.episodes}\n`;
+    details += `*Duration:* ${result.duration}\n`;
+    details += `*Genres:*\n`;
     for (let i = 0; i < result.genres.length; i++) {
       details += `\t\t\t\t\t\t\t\t${result.genres[i].name}\n`;
     }
-    details += `_Based on:_ ${result.source.toUpperCase()}\n`;
-    details += `_Studios:_\n`;
+    details += `*Based on:* ${result.source.toUpperCase()}\n`;
+    details += `*Studios:*\n`;
     for (let i = 0; i < result.studios.length; i++) {
       details += `\t\t\t\t\t\t\t\t${result.studios[i].name}\n`;
     }
-    details += `_Producers:_\n`;
+    details += `*Producers:*\n`;
     for (let i = 0; i < result.producers.length; i++) {
       details += `\t\t\t\t\t\t\t\t\t\t${result.producers[i].name}\n`;
     }
-    details += `_Premiered on:_ ${result.aired.from}\n`;
-    details += `_Ended on:_ ${result.aired.to}\n`;
-    details += `_Popularity:_ ${result.popularity}\n`;
-    details += `_Favorites:_ ${result.favorites}\n`;
-    details += `_Rating:_ ${result.rating}\n`;
-    details += `_Rank:_ ${result.rank}\n\n`;
+    details += `*Premiered on:* ${result.aired.from}\n`;
+    details += `*Ended on:* ${result.aired.to}\n`;
+    details += `*Popularity:* ${result.popularity}\n`;
+    details += `*Favorites:* ${result.favorites}\n`;
+    details += `*Rating:* ${result.rating}\n`;
+    details += `*Rank:* ${result.rank}\n\n`;
     if (result.trailer.url !== null)
-      details += `_Trailer:_ ${result.trailer.url}\n\n`;
-    details += `_URL:_ ${result.url}\n\n`;
+      details += `*Trailer:* ${result.trailer.url}\n\n`;
+    details += `*URL:* ${result.url}\n\n`;
     if (result.background !== null)
-      details += `_Background:_ ${result.background}\n\n`;
-    details += `_Description:_ ${result.synopsis.replace(
+      details += `*Background:* ${result.background}\n\n`;
+    details += `*Description:* ${result.synopsis.replace(
       /\[Written by MAL Rewrite]/g,
       ""
     )}`
@@ -4319,26 +4315,26 @@ const { Manga } =require("@shineiichijo/marika")
 const manga = new Manga();
 if(!q) return reply(`Please proide a search term!\n\n_Example:_ ${prefix}manga naruto`)
 let srh = await manga.searchManga(q)
-    let mang = `_Title:_ ${srh.data[0].title}\n`;
-    mang += `_Status:_ ${srh.data[0].status}\n`;
-    mang += `_Total Volumes:_ ${srh.data[0].volumes}\n`;
-    mang += `_Total Chapters:_ ${srh.data[0].chapters}\n`;
-    mang += `_Genres:_\n`;
+    let mang = `*Title:* ${srh.data[0].title}\n`;
+    mang += `*Status:* ${srh.data[0].status}\n`;
+    mang += `*Total Volumes:* ${srh.data[0].volumes}\n`;
+    mang += `*Total Chapters:* ${srh.data[0].chapters}\n`;
+    mang += `*Genres:*\n`;
     for (let i = 0; i < srh.data[0].genres.length; i++) {
       mang += `\t\t\t\t\t\t\t\t${srh.data[0].genres[i].name}\n`;
     }
-    mang += `_Published on:_ ${srh.data[0].published.from}\n`;
-    mang += `_Score:_ ${srh.data[0].scored}\n`;
-    mang += `_Popularity:_ ${srh.data[0].popularity}\n`;
-    mang += `_Favorites:_ ${srh.data[0].favorites}\n`;
-    mang += `_Authors:_\n`;
+    mang += `*Published on:* ${srh.data[0].published.from}\n`;
+    mang += `*Score:* ${srh.data[0].scored}\n`;
+    mang += `*Popularity:* ${srh.data[0].popularity}\n`;
+    mang += `*Favorites:* ${srh.data[0].favorites}\n`;
+    mang += `*Authors:*\n`;
     for (let i = 0; i < srh.data[0].authors.length; i++) {
       mang += `\t\t\t\t\t\t\t\t\t${srh.data[0].authors[i].name} (${srh.data[0].authors[0].type})\n`;
     }
-    mang += `\n_URL:_ ${srh.data[0].url}\n\n`;
+    mang += `\n*URL:* ${srh.data[0].url}\n\n`;
     if (srh.data[0].background !== null)
-      mang += `_Background:_ ${srh.data[0].background}`;
-    mang += `_Description:_ ${srh.data[0].synopsis.replace(
+      mang += `*Background:* ${srh.data[0].background}`;
+    mang += `*Description:* ${srh.data[0].synopsis.replace(
       /\[Written by MAL Rewrite]/g,
       ""
     )}`;
@@ -4437,8 +4433,8 @@ case "quotes":
     if (isBanChat) return reply(mess.bangc)
     if (!m.isGroup) return replay(mess.grouponly)
 var res = await Quotes()
-teks = `\n_Author:_ ${res.author}\n`
-teks += `\n_Quotes:_\n`
+teks = `\n*Author:* ${res.author}\n`
+teks += `\n*Quotes:*\n`
 teks += `${res.quotes}\n`
 
 replay(teks)
