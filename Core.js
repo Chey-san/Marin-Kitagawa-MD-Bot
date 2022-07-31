@@ -3490,7 +3490,7 @@ case 'pinterest': case 'pin': {
     case 'image': {
         if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
-            let { pinterest } = require('./lib/scrapper')
+            let { pinterest } = require('./lib/scraper')
                     anu = await pinterest(text)
                     result = anu[Math.floor(Math.random() * anu.length)]
                     Miku.sendMessage(m.chat, { image: { url: result }, caption: `Media Url : `+result }, { quoted: m })
