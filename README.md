@@ -105,7 +105,7 @@ npm start
 
 
 ## Contribution:
-I don't have any contributor in this project. Feel free to contribute.
+- I don't have any contributor in this project. Feel free to contribute.
 
 
 
