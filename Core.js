@@ -3486,16 +3486,7 @@ case 'pinterest': case 'pin': {
  }
  break
 
- case 'img':
-    case 'image': {
-        if (isBan) return reply(mess.banned)
-    if (isBanChat) return reply(mess.bangc)
-            let { pinterest } = require('./lib/scraper')
-                    anu = await pinterest(text)
-                    result = anu[Math.floor(Math.random() * anu.length)]
-                    Miku.sendMessage(m.chat, { image: { url: result }, caption: `Media Url : `+result }, { quoted: m })
-                }
-                break
+
 
 case 'swm': case 'take': case 'stickerwm': case 'steal':{
     if (isBan) return reply(mess.banned)
@@ -4607,7 +4598,7 @@ Here's the list of my Commands.
 
  *━━━━━━〈  Others  〉━━━━━━*
 
-🏮 image, imginvert, imagestupid, wasted, jail, stickermeme, quotes, darkjoke 🏮
+🏮 imginvert, imagestupid, wasted, jail, stickermeme, quotes, darkjoke 🏮
 
  *━━━━━━〈  Fun  〉━━━━━━*
 
