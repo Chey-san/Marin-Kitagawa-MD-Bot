@@ -4168,12 +4168,11 @@ break
 case 'cry': case 'kill': case 'hug': case 'pat': case 'lick': case 'kiss': case 'bite': case 'yeet':
 case 'bully': case 'bonk': case 'wink': case 'poke': case 'nom': case 'slap': case 'smile':
 case 'wave': case 'blush': case 'smug': case 'glomp': case 'happy': case 'dance':
-case 'cringe': case 'cuddle': case 'highfive': case 'handhold':
+case 'cringe': case 'cuddle': case 'highfive': case 'handhold': case 'kick':
 
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
-    if (!m.isGroup) return replay(mess.grouponly)
-reply(mess.waiting)							
+    if (!m.isGroup) return replay(mess.grouponly)						
 resggh = await axios.get(`https://nekos.life/api/v2/img/${command}`)         
 let resffj = await getBuffer(resggh.data.url)
 let resmain = await GIFBufferToVideoBuffer(resffj)   
@@ -4494,7 +4493,7 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `Konichiwa *${pushname}* Senpai,
 
-I am *Miku Nakano*, a bot developed by *Fantox*.
+I am *Miku Nakano*, a bot developed by Fantox.
 
 🍁 My prefix is:  ${prefix}
 
