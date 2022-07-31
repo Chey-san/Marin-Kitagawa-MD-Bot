@@ -2756,65 +2756,6 @@ case 'public': {
  }
  break
 
- case 'speed': case 'ping': case 'botstatus': {
-    if (isBan) return reply(mess.banned)	 			
- if (isBanChat) return reply(mess.bangc)
- const used = process.memoryUsage()
- const cpus = os.cpus().map(cpu => {
- cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
- return cpu
- })
- const cpu = cpus.reduce((last, cpu, _, { length }) => {
- last.total += cpu.total
- last.speed += cpu.speed / length
- last.times.user += cpu.times.user
- last.times.nice += cpu.times.nice
- last.times.sys += cpu.times.sys
- last.times.idle += cpu.times.idle
- last.times.irq += cpu.times.irq
- return last
- }, {
- speed: 0,
- total: 0,
- times: {
- user: 0,
- nice: 0,
- sys: 0,
- idle: 0,
- irq: 0
- }
- })
- let timestamp = speed()
- let latensi = speed() - timestamp
- neww = performance.now()
- oldd = performance.now()
- respon = `
- _Response Speed_ ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
- _Server Info:_
- RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
- _NodeJS Memory Usaage_
- ${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${formatp(used[key])}`).join('\n')}
- ${cpus[0] ? `_Total CPU Usage_
- ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
- _CPU Core(s) Usage (${cpus.length} Core CPU)_
- ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
- `.trim()
- reply(respon)
- }
- break
-
-
-case 'emojimix2': {
-            if (isBan) return reply(mess.banned)	 			
-     if (isBanChat) return reply(mess.bangc)
-             if (!text) return reply(`Example : ${prefix + command} 😅`)
-             let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(text)}`)
-             for (let res of anu.results) {
-                 let encmedia = await Miku.sendImageAsSticker(m.chat, res.url, m, { packname: global.packname, author: global.author, categories: res.tags })
-                 await fs.unlinkSync(encmedia)
-             }
-             }
-             break
 
 case 'toimage': case 'toimg': {
    if (isBan) return reply(mess.banned)	 			
