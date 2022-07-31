@@ -26,7 +26,11 @@
     <img src="(https://visitor-badge.glitch.me/badge?page_id=https://github.com/FantoX001/Shikimori-MD.visitor-badge&left_text=Total%20Repo%20Visitors)">
   </a>
      
-## Heroku Deployment Method 1
+     
+## Use `Heroku Deploy Method 2` for easy and more convenient deploy(Trust me).    
+</br>
+
+## Heroku Deployment Method 1:
 
 #### ✧ Fork this repo.
 #### ✧ Click this scan button below and scan the given QR within 10 seconds from your WhatsApp. 
@@ -41,7 +45,7 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FantoX001/Miku-MD)
 
 
-## Heroku Deployment Method 2
+## Heroku Deployment Method 2:
 
 #### ✧ `Fork` this repo.
 #### ✧ `Scan` the QR , download the `session.json` file and replace it with the older one present on the hompage of your `Fork`.
@@ -61,7 +65,7 @@
 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 ``` 
 ```
-https://github.com/clhuang/heroku-buildpack-webp-binaries.git```
+https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 ```
 heroku/nodejs
