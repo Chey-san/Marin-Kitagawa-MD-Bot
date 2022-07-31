@@ -10,6 +10,7 @@ const axios = require('axios')
 const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter')
 const path = require('path')
 const os = require('os')
+const { AnimeWallpaper } = require("anime-wallpaper")
  const { TiktokDownloader } = require('./lib/tiktokdl') 
 const moment = require('moment-timezone')
 const { JSDOM } = require('jsdom')
@@ -1609,17 +1610,21 @@ break
 
 
 case 'wallpaper': case 'animewallpaper': case 'animewall': {
-	if (isBan) return reply(mess.banned)	 			
+if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
-                if (!args.join(" ")) return reply("Please enter a term to search!")
-		let { wallpaper } = require('./lib/scraper')
-        anu = await wallpaper(args)
-        result = anu[Math.floor(Math.random() * anu.length)]
+if (!args.join(" ")) return reply("Please enter a term to search!")
+const { AnimeWallpaper } =require("anime-wallpaper")
+const wall = new AnimeWallpaper();
+const pages = [1,2,3,4];
+const random=pages[Math.floor(Math.random() * pages.length)]
+        const wallpaper = await wall .getAnimeWall4({ title: q, type: "sfw", page: pages }).catch(() => null);
+        const i = Math.floor(Math.random() * wallpaper.length);
+		
 let buttons = [
             {buttonId: `-wallpaper ${args.join(" ")}`, buttonText: {displayText: '>>'}, type: 1}
         ]
         let buttonMessage = {
-            image: { url: result.image[0] },
+            image: {url:wallpaper[i].image},
             caption: `Title : ${result.title}\nCategory : ${result.type}\nDetail : ${result.source}\nMedia Url : ${result.image[2] || result.image[1] || result.image[0]}`,
             footer: `${BotName}`,
             buttons: buttons,
