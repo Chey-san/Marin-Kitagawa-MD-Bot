@@ -7,22 +7,22 @@ global.autoReadAll = false
 global.antitags = true
 
 
-global.Owner = ['918101187835']
-global.OwnerNumber = ['918101187835']
-global.ownertag = ['918101187835']
-global.BotName = "Miku"
-global.packname = "Miku bot"
-global.author = "By: Fantox"
-global.OwnerName = "Fantox"
-global.BotSourceCode = "https://github.com/FantoX001/Miku-MD"
-global.SupportGroupLink = "https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"
+global.Owner = ['918373017400']
+global.OwnerNumber = ['918373017400']
+global.ownertag = ['918373017400']
+global.BotName = "𝑀𝒶𝓇𝒾𝓃-ᴋɪᴛᴀɢᴀᴡᴀ"
+global.packname = "𝑀𝒶𝓇𝒾𝓃-ʙᴏᴛ"
+global.author = "By: ᥴꫝꫀꪗ-𝙎𝙖𝙣💫🌙✨"
+global.OwnerName = "ᥴꫝꫀꪗ-𝙎𝙖𝙣💫🌙✨"
+global.BotSourceCode = "https://github.com/Chey-san/Marin-Kitagawa-MD-Bot"
+global.SupportGroupLink = "https://chat.whatsapp.com/G0dZXqJAL9b1boqnra7eb4"
 global.sessionName = "session"
 global.prefa = ['-']
 global.location = "West Bengal, India"
 global.reactmoji = "❤️"
 global.themeemoji = "💖"
-global.vidmenu = { url: 'https://c.tenor.com/YGuLegQWubwAAAPo/miku-nakano-gotoubun-no-hanayome.mp4' }
-global.websitex = "https://github.com/FantoX001"
+global.vidmenu = { url: 'https://telegra.ph/file/17ecc2eece63a4d8bcd51.mp4' }
+global.websitex = "https://github.com/Chey-san"
 global.lolhuman = "KaysaS"
 
 
@@ -56,7 +56,7 @@ global.mess = {
     jobdone: 'Job done...',
     useradmin: 'Sorry, only *Group Admins* can use this command *Baka*!',
     botadmin: 'Sorry, i cant execute this command without being an *Admin* of this group.',
-    botowner: 'Only my *Owner* can use this command, Baka!',
+    botowner: 'Only my *Owner* & ᥴꫝꫀꪗ-senpai ❣️ can use this command, Baka!',
     grouponly: 'This command is only made for *Groups*, Baka!',
     privateonly: 'This command is only made for *Private Chat*, Baka!',
     botonly: 'Only the *Bot itself* can use this command!',
