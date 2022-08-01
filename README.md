@@ -1,34 +1,26 @@
-<p align="center">
-   <a href="https://github.com/FantoX001">
-    <img src="https://c.tenor.com/NJVFjOYEcsIAAAAC/miku-gotoubun.gif" width="610">
-     
-</p>
-<h1 align="center"> Miku Nakano 
-</h1>
-<p align="center"> 
-  Konochiwa Senpai, I am "Miku Nakano" a WhatsApp bot made by Fantox to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
+<h1 align="center"> 💫 𝓦𝓮𝓵𝓬𝓸𝓶𝓮 𝔖𝓮𝓷𝓹𝓪𝓲✨ ❣️
+<div align="center">
+<a href="https://github.com/Chey-san/"><img src="https://user-images.githubusercontent.com/97988840/156468495-58f662e6-959a-4121-87f7-8ea9cba47f03.gif"
+" alt="chitoge" border="0"></a>
+
+💫**Marin: A WhatsApp BOT🖤💖 WITH RICH✨ ANIME & NSFW🔞FEATURES BASED ON <a href="https://github.com/FantoX001/Miku-MD">MIKU</er></a></h1>**
+
+
+
+
 
 <p align="center">
-  <a href="https://github.com/FantoX001/Miku-MD/fork">
-    <img src="https://img.shields.io/github/forks/FantoX001/Miku-MD?label=Fork&style=social">
+  <a href="https://github.com/Chey-san/Marin-Kitagawa-MD-Bot">
+    <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/Chey-san/Marin-Kitagawa-MD-Bot.visitor-badge&left_text=Total%20Repo%20Visits">
     
     
-  <a href="https://github.com/FantoX001/Miku-MD/stargazers">
-    <img src="https://img.shields.io/github/stars/FantoX001/Miku-MD?style=social">
-  </a>
-
-<p align="center">
-  <a href="https://github.com/FantoX001/Miku-MD">
-    <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/FantoX001/Miku-MD.visitor-badge&left_text=Total%20Repo%20Visits">
-    
-    
-<a href="https://github.com/FantoX001">
-    <img src="(https://visitor-badge.glitch.me/badge?page_id=https://github.com/FantoX001/Shikimori-MD.visitor-badge&left_text=Total%20Repo%20Visitors)">
+<a href="https://github.com/Chey-san">
+    <img src="(https://visitor-badge.glitch.me/badge?page_id=https://github.com/Chey-san/Marin-Kitagawa-MD-Bot.visitor-badge&left_text=Total%20Repo%20Visitors)">
   </a>
 </br>
      </br>  
      
-### ✧✧ Use `Heroku Deploy Method 2` for easy and more convenient deploy(Trust me).    
+### ✧✧ Use `Heroku Deploy Method 2` for easy and more convenient deploy(Trust me☺️✨).    
 </br>
 
 ## Heroku Deployment Method 1:
@@ -37,13 +29,13 @@
 #### ✧ Click this scan button below and scan the given QR within 10 seconds from your WhatsApp. 
 <a href="https://shikimoriqr.herokuapp.com/"><img src="https://play-lh.googleusercontent.com/901aMQFFnVoX2T-YuJmTIwpPve_SUgMv_QSyzMSPtAqt_l0CyXN1DxfD6xXU0r2f9iM=w240-h480-rw" width="100" />
 </a>
-#### ✧ Next download that `session.json` file and replace it with the older one present the hompage of your [`Fork`](https://github.com/FantoX001/Miku-MD/fork).
+#### ✧ Next download that `session.json` file and replace it with the older one present the hompage of your [`Fork`](https://github.com/Chey-san/Marin-Kitagawa-MD-Bot).
 
-#### ✧ After that edit the `README.md` file and change the template link present on line no:`39` with your forked repo link.(Example: `https://github.com/<your GitHub username>/Miku-MD`)
+#### ✧ After that edit the `README.md` file and change the template link present on line no:`39` with your forked repo link.(Example: `https://github.com/<your GitHub username>/Marin-Kitagawa-MD-Bot`)
 
 #### ✧ Next
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/FantoX001/Miku-MD)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Chey-san/Marin-Kitagawa-MD-Bot)
 
 
 ## Heroku Deployment Method 2:
@@ -53,7 +45,7 @@
 #### ✧ Go to your `Heroku` account.
 #### ✧ Create a `random app` in Heroku with any name.
 #### ✧ Connect your `GitHub` with `Heroku`
-#### ✧ Then connect `Miku's repo` from your GitHub.
+#### ✧ Then connect `Marin's repo` from your GitHub.
 #### ✧ Go to Heroku's `settings` ----> `Add Buildpacks` then connect these 3 buildpacks one by one mentionned    below.
 #### ✧ Then come back to `Heroku` ----> `Deploy` then deploy the app
 #### ✧ After deploy is finished goto `Heroku` ----> `Resources` and turn on the switch.
@@ -77,7 +69,7 @@ heroku/nodejs
 
 ## Join My Whatsapp Group for Support
 
-<a href="https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"><img src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/G0dZXqJAL9b1boqnra7eb4"><img src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
 ## Physical Deployment Method ( Untested! )
@@ -92,8 +84,8 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/FantoX001/Miku-MD
-cd Miku-Md
+git clone https://github.com/Chey-san/Marin-Kitagawa-MD-Bot
+cd  Marin-Kitagawa-MD-Bot
 npm start
 ```
 
@@ -101,7 +93,7 @@ npm start
 - Well, it's the most asked question !
 - And the answer is `"Permission is hereby granted for 100% modification/recode."`
 - And this project comes under [`MIT`](https://github.com/FantoX001/Miku-MD/blob/main/LICENSE.md) lincense.
-- Please at least [`Follow`](https://github.com/FantoX001/#follow) me on GitHub to show some appreciation.
+- Please at least [`Follow`](https://github.com/Chey-san/#follow) me on GitHub to show some appreciation.
    
    
 ## Reminder:
@@ -117,7 +109,7 @@ npm start
 
 
 ## Help:
-- [`Follow`](https://github.com/FantoX001/#follow) me on GitHub to make me feel motivated.
+- [`Follow`](https://github.com/Chey-san/#follow) me on GitHub to make me feel motivated.
 - Give my project a ⭐ if you liked it.
 
      
@@ -126,3 +118,4 @@ npm start
 -   `Adiwajshing` sir for [Baileys](https://github.com/adiwajshing/baileys).
 -   `Arus~Bots` team for [Mizuhara](https://github.com/Arus-Bots/Mizuhara).
 -   `Xeon` for [Cheems](https://github.com/DGXeon/CheemsBot-MD2).
+-   `FantoX001` bruh for [Miku-MD](https://github.com/FantoX001/Miku-MD).
