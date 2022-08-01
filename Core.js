@@ -1373,7 +1373,7 @@ const ftroli = {
 
 
     const menulist = `
-    Konichiwa ${pushname} dear 👋. I am ${global.BotName}, a bot developed by: Fantox to take your WhatsApp usage into next level.
+    Konichiwa ${pushname} dear 👋. I am ${global.BotName}, a bot developed by: ᥴꫝꫀꪗ-𝙎𝙖𝙣 to take your WhatsApp usage into next level.
         
        「 System Info 」
     
@@ -1432,12 +1432,12 @@ switch(command) {
     buttons: buttons,
     headerType: 4,
     /*contextInfo:{externalAdReply:{
-    title:"Powered by Fantox",
+    title:"Powered by ᥴꫝꫀꪗ-𝙎𝙖𝙣",
     body: " ", 
     thumbnail: fs.readFileSync("Assets/pic2.jpg"),
     mediaType:1,
-    mediaUrl: 'https://wallpapercave.com/wp/wp10524580.jpg',
-    sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
+    mediaUrl: 'https://www.linkpicture.com/q/396783-wallpaper-anime-girl-flower-umbrella-raining-4k.jpg',
+    sourceUrl: "https://www.linkpicture.com/q/396783-wallpaper-anime-girl-flower-umbrella-raining-4k.jpg"
     }}*/
 
     }
@@ -1465,7 +1465,7 @@ case 'me': case 'profile': case 'p':
     
           } catch (e) {
      
-      pfp ='https://wallpapercave.com/wp/wp10524580.jpg'
+      pfp ='https://www.linkpicture.com/q/396783-wallpaper-anime-girl-flower-umbrella-raining-4k.jpg'
     }
 
      const profilexx = `*「  Profile Info  」*\n\n*User Name* : ${pushname}\n*Bio* : ${bioo}\n*Group Admin Status* : ${adn}\n*Level* : ${levelMenu}\n*Exp* : ${xpMenu} out of ${reqXp}\n*Role* : ${role}`
@@ -4492,91 +4492,91 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
       
- const helpmenu = `Konichiwa *${pushname}* Senpai❣️,
+ const helpmenu = `💫Konichiwa *${pushname}* Senpai❣️,
 
 I am *𝑀𝒶𝓇𝒾𝓃 ⋊ ᴋɪᴛᴀɢᴀᴡᴀ*, a bot developed by ᥴꫝꫀꪗ-𝙎𝙖𝙣💫🌙🪐✨.
 
-🍁 My prefix is:  ${prefix}
+⁉️ My prefix is:  ${prefix}
 
 Here's the list of my Commands.
  
 
 
- *━━━━━━〈  Core⭕〽️  〉━━━━━━*
+ *━━━━━━〈Core〽️  〉━━━━━━*
 
 🧧 profile, help, delete, listgc, listpc, welcome, support, repo, script 
  
- *━━━━━━〈  Owner❣️〽️  〉━━━━━━*
+ *━━━━━━〈Owner〽️  〉━━━━━━*
 
 🧧 self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast 
 
- *━━━━━━〈  Group🍂〽️  〉━━━━━━*
+ *━━━━━━〈Group〽️  〉━━━━━━*
 
 🧧 promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
 
- *━━━━━━〈  Anti Link❗〽️  〉━━━━━━*
+ *━━━━━━〈Anti Link〽️  〉━━━━━━*
  
 🧧 antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
 
- *━━━━━━〈  Search🔍〽️  〉━━━━━━*
+ *━━━━━━〈Search〽️  〉━━━━━━*
 
 🧧 play, song, yts, lyrics, google, playstore, gimage, pinterest, image, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone   
 
- *━━━━━━〈  Convert🧭〽️  〉━━━━━━*
+ *━━━━━━〈Convert〽️  〉━━━━━━*
 
 🧧 sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
 
- *━━━━━━〈  Audio💽〽️  〉━━━━━━*
+ *━━━━━━〈Audio〽️  〉━━━━━━*
 
 🧧 bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
 
- *━━━━━━〈  Reactions⭕〽️  〉━━━━━━*
+ *━━━━━━〈Reactions〽️  〉━━━━━━*
 
 🧧 bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
 
- *━━━━━━〈  Downloader💠〽️  〉━━━━━━*
+ *━━━━━━〈Downloader〽️  〉━━━━━━*
 
 🧧 play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
 
- *━━━━━━〈  Weeb♨️〽️  〉━━━━━━*
+ *━━━━━━〈Weeb〽️  〉━━━━━━*
 
 🧧 waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
 
- *━━━━━━〈  Informative📚〽️  〉━━━━━━*
+ *━━━━━━〈Informative〽️  〉━━━━━━*
 
 🧧 animequote, quote, covid, earthquake, wiki
 
- *━━━━━━〈  Others⭕〽️  〉━━━━━━*
+ *━━━━━━〈Others〽️  〉━━━━━━*
 
 🧧 stickermeme, quotes, darkjoke 
 
- *━━━━━━〈  Fun🎡〽️  〉━━━━━━*
+ *━━━━━━〈Fun〽️  〉━━━━━━*
 
 🧧 truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
 
- *━━━━━━〈  Essentials☄️〽️  〉━━━━━━*
+ *━━━━━━〈Essentials〽️ 〉━━━━━━*
 
 🧧 translate, fliptext, toletter
 
- *━━━━━━〈  NSFW🔞〽️  〉━━━━━━*
+ *━━━━━━〈NSFW〽️ 〉━━━━━━*
 
-🍁 Type " *${prefix}nsfw* " then enable NSFW (🔞Admin only!) 
+⭕ Type " *${prefix}nsfw* " then enable NSFW (🔞Admin only!) 
 
-🍁 Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
+⭕ Then type " *${prefix}nsfwmenu* " to get full list of NSFW commands.
 
 
 
 
 
  『  *${global.BotName}*  』
- Powered by: *ᥴꫝꫀꪗ-𝙎𝙖𝙣💫🌙🪐✨*
-
- 🍁 To use any of these commands type 
+ Powered by: *FanTox*
+ Designed by: *ᥴꫝꫀꪗ*
+ ⭕ To use any of these commands type 
  " *${prefix}<Command name>* ".
  
- 🍁 To get Support Group link type " *${prefix}support* ".
+ ⭕ To get Support Group link type " *${prefix}support* ".
 
- 🍁 Type " *${prefix}help* " to get full command list.`
+ ⭕ Type " *${prefix}help* " to get full command list.`
      
  let buttonshelpm = [
     {buttonId: `-owner`, buttonText: {displayText: 'Bot Owner'}, type: 1}
