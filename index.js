@@ -26,14 +26,14 @@ console.log(color(figlet.textSync('Miku Bot MD', {
 		whitespaceBreak: true
         }), 'yellow'))
 
-console.log(color('\nHello, I am Fantox, the main developer of this bot.\n\nThanks for using: Miku Bot','aqua'))
-console.log(color('\nYou can follow me on GitHub: FantoX001','aqua'))
+console.log(color('\nHello, I am Chey Modifier of this Bot, Fantox is the main developer of this bot.\n\nThanks for using: Miku Bot','aqua'))
+console.log(color('\nYou can follow me on GitHub: Chey-san','aqua'))
 
     let { version, isLatest } = await fetchLatestBaileysVersion()
     const Miku = MikuConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Miku by: Fantox','Safari','1.0.0'],
+        browser: ['Marin by: Chey-san','Safari','1.0.0'],
         auth: state,
         version
     })
@@ -116,7 +116,7 @@ Miku.ev.on('group-participants.update', async (anu) => {
                 Mikutext = `
 Hello @${WAuserName.split("@")[0]},
 
-I am *Miku Nakano*, Welcome to ${metadata.subject}.
+I am *Marin*, Welcome to ${metadata.subject}.
 
 *Group Description:*
 ${metadata.desc}
@@ -143,11 +143,11 @@ Sayonara 👋, @${WAuserName.split("@")[0]},
 
 I hope you will come back soon, but we are not going to miss you though!
 
-Just let him go and start using MIKU by pressing the button below...
+Just let him go and start using MARIN by pressing the button below...
 `
 
 let Mikubuttons = [
-    {buttonId: `-menu`, buttonText: {displayText: 'Use Miku'}, type: 1}
+    {buttonId: `-menu`, buttonText: {displayText: 'Use Marin'}, type: 1}
     ]
     let buttonMessage = {
     jpegThumbnail:buffer,
