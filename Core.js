@@ -1553,14 +1553,14 @@ case 'support': case 'supportgc':
 
 case 'repo': case 'botrepo':
     
-    reply(`*My Source Code:* https://github.com/FantoX001/Miku-MD`)
+    reply(`*Here  is My Source Code Darling❤️:* https://github.com/Chey-san/Marin-Kitagawa-MD-Bot`)
     break
 
 case 'nsfwmenu':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!AntiNsfw) return reply(mess.nonsfw)
-        reply(` *━━━━━━〈  NSFW Menu  〉━━━━━━*\n\n🏮 hentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
+        reply(` *━━━━━━〈  🍒NSFW Menu🍒  〉━━━━━━*\n\n🏮 hentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
     break
 
     
@@ -1570,9 +1570,9 @@ case 'limituser': case 'userlimit': case 'limit':
             if (isBan) return reply(mess.banned)	 			
             if (isBanChat) return reply(mess.bangc)
             {      
-               let txt = `「 *All User Limit* 」\n\n`
+               let txt = `「 *📚All User Limit📚* 」\n\n`
                  for (let i of _limit){
-                 txt += ` *User ID :* @${i.id.split("@")[0]}\n➸ *Limit* : ${i.limit}\n`
+                 txt += ` *🎫User ID :* @${i.id.split("@")[0]}\n🔰 *Limit* : ${i.limit}\n`
                  }
                 reply(txt)       
               }
@@ -2476,9 +2476,9 @@ if (isBanChat) return reply(mess.bangc)
  if (!isAdmins && !isCreator) return replay(mess.useradmin)
  let teks = `「 _Tag All_ 」
   
- *Message : ${args.join(" ") ? args.join(" ") : 'no message'}*\n\n`
+ *🎋Message : ${args.join(" ") ? args.join(" ") : 'no message'}*\n\n`
  for (let mem of participants) {
- teks += `» @${mem.id.split('@')[0]}\n`
+ teks += `❄️ @${mem.id.split('@')[0]}\n`
  }
  Miku.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
  }
@@ -3634,7 +3634,7 @@ break
 case 'handsomecheck':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Fantox`)
+				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @chey`)
 					const gan = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const teng = gan[Math.floor(Math.random() * gan.length)]
 Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${teng}%*` }, { quoted: m })
@@ -3642,7 +3642,7 @@ Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${teng}%*
 case 'beautifulcheck':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Fantox`)
+				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @chey`)
 					const can = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const tik = can[Math.floor(Math.random() * can.length)]
 Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${tik}%*` }, { quoted: m })
@@ -3659,7 +3659,7 @@ case 'awesomecheck':
                       case 'uglycheck':
                         if (isBan) return reply(mess.banned)
                         if (isBanChat) return reply(mess.bangc)
-				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Fantox`)
+				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @chey`)
 					const sangeh = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const sange = sangeh[Math.floor(Math.random() * sangeh.length)]
 Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%*` }, { quoted: m })
@@ -3669,7 +3669,7 @@ Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%
 case 'charactercheck':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
-					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Fantox`)
+					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @chey`)
 					const Mikutttt =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
 					const taky = Mikutttt[Math.floor(Math.random() * Mikutttt.length)]
 					Miku.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
@@ -3749,7 +3749,7 @@ case 'charactercheck':
          "shout you bastard in front of your mom/papa",
          "change the name to i am idiot for 24 hours",
          "slap urself firmly and send the sound of slap through voice note😂",
-         "say i love the bot owner Fantox through voice note",
+         "say i love the bot owner chey through voice note",
          "send your gf/bf pic here",
          "make any tiktok dance challenge video and put it on status, u can delete it after 5hrs",
          "breakup with your best friend for 5hrs without telling him/her that its a dare",
@@ -3841,7 +3841,7 @@ case 'truth':
                  "Mention the incident that makes you hurt that you still remember",
                  "what achievements have you got this year?",
                  "what was your worst habit at school?",
-                 "do you love the bot creator Fantox?",
+                 "do you love the bot creator chey?",
                  "have you ever thought of taking revenge from ur teacher?",
                  "do you like current prime minister of ur country",
                  "you non veg or veg",
@@ -4494,71 +4494,71 @@ case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
       
  const helpmenu = `💫Konichiwa *${pushname}* Senpai❣️,
 
-I am *𝑀𝒶𝓇𝒾𝓃 ⋊ ᴋɪᴛᴀɢᴀᴡᴀ*, a bot developed by ᥴꫝꫀꪗ-𝙎𝙖𝙣💫🌙🪐✨.
+I am *𝑀𝒶𝓇𝒾𝓃 ⋊ ᴋɪᴛᴀɢᴀᴡᴀ*, a bot developed by ᥴꫝꫀꪗ-𝙎𝙖𝙣.
 
-⁉️ My prefix is:  ${prefix}
+🎲 My prefix is:  ${prefix}
 
 Here's the list of my Commands.
  
 
 
- *━━━━━━〈Core〽️  〉━━━━━━*
+ *━━━━〈 👾Core👾 〉━━━━*
 
 🧧 profile, help, delete, listgc, listpc, welcome, support, repo, script 
  
- *━━━━━━〈Owner〽️  〉━━━━━━*
+ *━━━━〈 🎋Owner🎋 〉━━━━*
 
 🧧 self, public, ban, bangroup, bye, join, bye, block, unblock, broadcast 
 
- *━━━━━━〈Group〽️  〉━━━━━━*
+ *━━━━〈 🎐Group🎐 〉━━━━*
 
 🧧 promote, demote, revoke, remove, tagall, hidetag, groupsetting, grouplink, setgcpp, setname, setdesc, group, nsfw 
 
- *━━━━━━〈Anti Link〽️  〉━━━━━━*
+ *━━━━〈 🖇️Anti Link🖇️ 〉━━━━*
  
 🧧 antilinkgc, antilinktg, antilinktt, antilinkytch, antilinkytvid, antilinkig, antilinkfb, antilinktwit, antilinkall, antiwame
 
- *━━━━━━〈Search〽️  〉━━━━━━*
+ *━━━━〈 🔎Search🔎 〉━━━━*
 
 🧧 play, song, yts, lyrics, google, playstore, gimage, pinterest, image, movie, wallpaper, searchgc, happymod, wikimedia, ringtone, anime, animestory, manga, ringtone   
 
- *━━━━━━〈Convert〽️  〉━━━━━━*
+ *━━━━〈 🧣Convert🧣 〉━━━━*
 
 🧧 sticker, toimg, tovideo, togif , steal, stickermeme, emojimix, tourl, tomp3, toaudio
 
- *━━━━━━〈Audio〽️  〉━━━━━━*
+ *━━━━〈 ♻️Audio♻️️ 〉━━━━*
 
 🧧 bass, tempo, blown, deep, earrape, fast, fat, nightcore, reverse, robot, slow, squirrel
 
- *━━━━━━〈Reactions〽️  〉━━━━━━*
+ *━━━━〈 〽️Reactions〽️ 〉━━━━*
 
 🧧 bonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe
 
- *━━━━━━〈Downloader〽️  〉━━━━━━*
+ *━━━〈 ⏬Downloader⏬️ 〉━━━*
 
 🧧 play, ytmp3, ytmp4, ytvideo, mediafire, instagram, igtv, facebook, fbmp3, twitter, twittermp3, tiktok, tiktokaudio, tiktoknowm, mediafire  
 
- *━━━━━━〈Weeb〽️  〉━━━━━━*
+ *━━━━〈 🎴Weeb🎴️ 〉━━━━*
 
 🧧 waifu, loli, neko, ppcouple, feed, foxgirl, feed, meow, tickle, wallpaper, coffee, animenom, waifu3, neko2, feed, meow, tickle, migumin, awoo, animewallpaper2, anime, manga
 
- *━━━━━━〈Informative〽️  〉━━━━━━*
+ *━━━━〈 🎫Informative🎫 〉━━━━*
 
 🧧 animequote, quote, covid, earthquake, wiki
 
- *━━━━━━〈Others〽️  〉━━━━━━*
+ *━━━━〈 🧨Others🧨 〉━━━━*
 
 🧧 stickermeme, quotes, darkjoke 
 
- *━━━━━━〈Fun〽️  〉━━━━━━*
+ *━━━━〈 📚Fun📚 〉━━━━*
 
 🧧 truth, dare, couple, soulmate, handsomecheck, beautifulcheck, awesomecheck, greatcheck, gaycheck, cutecheck, lesbiancheck, hornycheck, prettycheck, lovelycheck, uglycheck, charactercheck
 
- *━━━━━━〈Essentials〽️ 〉━━━━━━*
+ *━━━━〈 🍁Essentials🍁️ 〉━━━━*
 
 🧧 translate, fliptext, toletter
 
- *━━━━━━〈NSFW〽️ 〉━━━━━━*
+ *━━━━〈 🍒NSFW️🍒 〉━━━━*
 
 ⭕ Type " *${prefix}nsfw* " then enable NSFW (🔞Admin only!) 
 
