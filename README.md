@@ -70,9 +70,9 @@ heroku/nodejs
 
 
 
-## Join My Whatsapp Group for Support
+## want to watch some 18+ stuff join my HENTAI group 
 
-<a href="https://chat.whatsapp.com/G0dZXqJAL9b1boqnra7eb4"><img src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://chat.whatsapp.com/LU1AgpjfN5xAoZEOrKBs0d"><img src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 
 ## Physical Deployment Method ( Untested! )
